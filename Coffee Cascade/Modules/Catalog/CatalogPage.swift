@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CatalogPage.swift
 //  Coffee Cascade
 //
 //  Created by Николай Лермонтов on 07.07.2024.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CatalogPage: View {
     var body: some View {
+
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
@@ -20,5 +21,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    CatalogPage()
 }

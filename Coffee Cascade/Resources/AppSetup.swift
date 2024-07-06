@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct Coffee_CascadeApp: App {
+struct AppSetup: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CatalogPage()
         }
     }
 }

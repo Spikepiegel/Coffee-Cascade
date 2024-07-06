@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4531676A2C3A0D210053D22E /* Coffee_CascadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167692C3A0D210053D22E /* Coffee_CascadeApp.swift */; };
-		4531676C2C3A0D210053D22E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531676B2C3A0D210053D22E /* ContentView.swift */; };
+		4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167692C3A0D210053D22E /* AppSetup.swift */; };
 		4531676E2C3A0D210053D22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
 		453167712C3A0D210053D22E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453167702C3A0D210053D22E /* Preview Assets.xcassets */; };
 		4531677B2C3A0D220053D22E /* Coffee_CascadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4531677A2C3A0D220053D22E /* Coffee_CascadeTests.swift */; };
 		453167852C3A0D220053D22E /* Coffee_CascadeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167842C3A0D220053D22E /* Coffee_CascadeUITests.swift */; };
 		453167872C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167862C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift */; };
+		454674AF2C3A0F21009DA332 /* CatalogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674AE2C3A0F21009DA332 /* CatalogPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,7 @@
 
 /* Begin PBXFileReference section */
 		453167662C3A0D210053D22E /* Coffee Cascade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Cascade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		453167692C3A0D210053D22E /* Coffee_CascadeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_CascadeApp.swift; sourceTree = "<group>"; };
-		4531676B2C3A0D210053D22E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		453167692C3A0D210053D22E /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		4531676D2C3A0D210053D22E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		453167702C3A0D210053D22E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		453167762C3A0D220053D22E /* Coffee CascadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee CascadeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		453167802C3A0D220053D22E /* Coffee CascadeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee CascadeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		453167842C3A0D220053D22E /* Coffee_CascadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_CascadeUITests.swift; sourceTree = "<group>"; };
 		453167862C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_CascadeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		454674AE2C3A0F21009DA332 /* CatalogPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +94,12 @@
 		453167682C3A0D210053D22E /* Coffee Cascade */ = {
 			isa = PBXGroup;
 			children = (
-				453167692C3A0D210053D22E /* Coffee_CascadeApp.swift */,
-				4531676B2C3A0D210053D22E /* ContentView.swift */,
-				4531676D2C3A0D210053D22E /* Assets.xcassets */,
+				454674B42C3A0F9C009DA332 /* Services */,
+				454674B32C3A0F85009DA332 /* Extenstions */,
+				454674B12C3A0F69009DA332 /* Presentation */,
+				454674B02C3A0F5E009DA332 /* Models */,
+				454674AC2C3A0EC5009DA332 /* Modules */,
+				454674AB2C3A0E68009DA332 /* Resources */,
 				4531676F2C3A0D210053D22E /* Preview Content */,
 			);
 			path = "Coffee Cascade";
@@ -125,6 +128,67 @@
 				453167862C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift */,
 			);
 			path = "Coffee CascadeUITests";
+			sourceTree = "<group>";
+		};
+		454674AB2C3A0E68009DA332 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				453167692C3A0D210053D22E /* AppSetup.swift */,
+				4531676D2C3A0D210053D22E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		454674AC2C3A0EC5009DA332 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				454674AD2C3A0F0D009DA332 /* Catalog */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		454674AD2C3A0F0D009DA332 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				454674AE2C3A0F21009DA332 /* CatalogPage.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		454674B02C3A0F5E009DA332 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		454674B12C3A0F69009DA332 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				454674B22C3A0F73009DA332 /* ReusableUI */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		454674B22C3A0F73009DA332 /* ReusableUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableUI;
+			sourceTree = "<group>";
+		};
+		454674B32C3A0F85009DA332 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		454674B42C3A0F9C009DA332 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4531676C2C3A0D210053D22E /* ContentView.swift in Sources */,
-				4531676A2C3A0D210053D22E /* Coffee_CascadeApp.swift in Sources */,
+				454674AF2C3A0F21009DA332 /* CatalogPage.swift in Sources */,
+				4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
