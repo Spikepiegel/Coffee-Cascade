@@ -15,26 +15,56 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
     var body: some View {
         ZStack {
             LinearGradient(
-                colors: [.white, .blue],
+                colors: [.custom(.mainTopGradient), .custom(.mainBottomGradient)],
                 startPoint: .top,
                 endPoint: .bottom
             )
             .ignoresSafeArea()
             
             VStack {
-                CategoriesScrollView(categories: $viewModel.categories, selectedCategory: $viewModel.selectedCategory)
-                                    .frame(height: 80)
+                CategoriesScrollView(
+                    categories: $viewModel.categories,
+                    selectedCategory: $viewModel.selectedCategory
+                )
+                .frame(height: 80)
+                
                 
                 RecipeScrollView(recipes: $viewModel.filteredRecipes)
+                
+                CatalogBottomNavigator()
+                    .padding(.bottom, 5)
             }
-            
-
         }
         .onAppear {
             Task {
                 await viewModel.onAppear()
             }
         }
+    }
+}
+
+struct RecipeDetailView: View {
+    let recipe: Recipe
+    var namespace: Namespace.ID
+
+    var body: some View {
+        VStack {
+            KFImage(URL(string: recipe.image))
+                .resizable()
+                .scaledToFill()
+                .frame(height: 300)
+                .clipShape(RoundedRectangle(cornerRadius: 36))
+                .matchedGeometryEffect(id: recipe.id, in: namespace)
+                .padding()
+
+            Text(recipe.name)
+                .font(.largeTitle)
+                .padding()
+            
+            Spacer()
+        }
+        .navigationTitle(recipe.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

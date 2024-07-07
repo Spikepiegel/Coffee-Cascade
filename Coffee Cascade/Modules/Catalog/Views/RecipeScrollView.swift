@@ -9,28 +9,25 @@ import SwiftUI
 import Kingfisher
 
 struct RecipeScrollView: View {
-    @Binding 
-    var recipes: [Recipe]
+    @Binding var recipes: [Recipe]
 
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack(spacing: 16) {
-                ForEach($recipes) { $recipe in
-                    VStack {
-                        ZStack {
-                            CoffeeView(image: recipe.image)
-                        }
-                        .containerRelativeFrame(.horizontal)
-                        .clipShape(RoundedRectangle(cornerRadius: 36))
-                        Text(recipe.name)
-                            .font(.headline)
-                            .foregroundColor(.white)
+        ScrollViewReader { proxy in
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(spacing: 16) {
+                    ForEach(recipes) { recipe in
+                        CoffeeView(image: recipe.image, name: recipe.name)
+                            .id(recipe.id)
+                            .transition(.slide)
+                    }
+                }
+                .onChange(of: recipes) {
+                    withAnimation {
+                        proxy.scrollTo(recipes.first?.id, anchor: .center)
                     }
                 }
             }
+            .contentMargins(25)
         }
-        .contentMargins(25)
-        .scrollTargetBehavior(.paging)
     }
 }
-

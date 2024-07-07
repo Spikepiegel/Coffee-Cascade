@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 protocol ICatalogViewModel: ObservableObject {
     func onAppear() async
@@ -47,6 +48,7 @@ final class CatalogViewModel: ICatalogViewModel {
     
     private func setupBindings() {
         $selectedCategory
+            .receive(on: DispatchQueue.main)
             .combineLatest($recipes)
             .map { selectedCategory, recipes in
                 guard let selectedCategory = selectedCategory else {
@@ -62,7 +64,7 @@ final class CatalogViewModel: ICatalogViewModel {
             let recipes = try await recipeService.getRecipes()
             await MainActor.run {
                 self.recipes = recipes
-                self.categories = Array(Set(recipes.map { $0.category }))
+                self.categories = Array(Set(recipes.map { $0.category })).sorted()
             }
         } catch {
             print("Error fetching data: \(error)")

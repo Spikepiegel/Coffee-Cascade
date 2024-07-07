@@ -17,12 +17,12 @@ struct CategoriesScrollView: View {
                 ForEach(categories, id: \.self) { category in
                     Text(category)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.custom(.categoryColor))
                         .foregroundColor(.white)
                         .clipShape(Capsule())
                         .overlay(
                             Capsule()
-                                .stroke(category == selectedCategory ? Color.red : Color.clear, lineWidth: 2)
+                                .stroke(category == selectedCategory ? Color.white : Color.clear, lineWidth: 2)
                         )
                         .onTapGesture {
                             selectedCategory = category == selectedCategory ? nil : category
@@ -33,31 +33,3 @@ struct CategoriesScrollView: View {
         }
     }
 }
-
-
-//struct CategoriesScrollView: View {
-//    @Binding var categories: [String]
-//    @Binding var selectedCategory: String?
-//    
-//    var body: some View {
-//        ScrollView(.horizontal, showsIndicators: false) {
-//            LazyHStack(spacing: 10) {
-//                ForEach(categories, id: \.self) { category in
-//                    Text(category)
-//                        .padding()
-//                        .background(Color.blue)
-//                        .foregroundColor(.white)
-//                        .clipShape(Capsule())
-//                        .overlay(
-//                            RoundedRectangle(cornerRadius: 16)
-//                                .stroke(category == selectedCategory ? Color.black : Color.clear, lineWidth: 2)
-//                        )
-//                        .onTapGesture {
-//                            selectedCategory = category == selectedCategory ? nil : category
-//                        }
-//                }
-//            }
-//            .padding(.horizontal)
-//        }
-//    }
-//}
