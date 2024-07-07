@@ -11,7 +11,15 @@ import SwiftUI
 struct AppSetup: App {
     var body: some Scene {
         WindowGroup {
-            CatalogPage()
+            setupInitialView()
         }
+    }
+    
+    @ViewBuilder
+    private func setupInitialView() -> some View {
+        let dataRepository: IDataRepository = DataRepository()
+        let recipeService: IRecipeService = RecipeService(dataRepository: dataRepository)
+        let viewModel = CatalogViewModel(recipeService: recipeService)
+        CatalogView(viewModel: viewModel)
     }
 }
