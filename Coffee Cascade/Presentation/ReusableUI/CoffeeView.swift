@@ -11,26 +11,23 @@ import Kingfisher
 struct CoffeeView: View {
     let image: String
     let name: String
+    let onTap: () -> Void
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            KFImage(URL(string: image))
-                .placeholder {
-                    Image(systemName: "photo")
-                        .resizable()
-                        .scaledToFill()
-                        .clipped()
-                }
-                .resizable()
-                .scaledToFill()
-                .clipped()
-                .scrollTransition(axis: .horizontal) { content, phase in
-                    content
-                        .offset(x: phase.isIdentity ? 0 : phase.value * -200)
-                }
-                .containerRelativeFrame(.horizontal)
-                .clipShape(RoundedRectangle(cornerRadius: 36))
-            
+            GestureHandlingView {
+                ProductKFImage(image: image)
+                    .scrollTransition(axis: .horizontal) { content, phase in
+                        content
+                            .offset(x: phase.isIdentity ? 0 : phase.value * -200)
+                    }
+                    .containerRelativeFrame(.horizontal)
+                    .clipShape(RoundedRectangle(cornerRadius: 36))
+            }
+            .onTapGesture {
+                onTap()
+            }
+
             VStack {
                 Spacer()
                 Text(name)
@@ -48,7 +45,10 @@ struct CoffeeView: View {
     }
 }
 
+
 #Preview {
     let image = "https://athome.starbucks.com/sites/default/files/2021-06/1_CAH_CaffeMocha_Hdr_2880x16602.jpg"
-    return CoffeeView(image: image, name: "123")
+    return CoffeeView(image: image, name: "123", onTap: {
+        print("tapped")
+    })
 }

@@ -11,6 +11,7 @@ import SwiftUI
 
 protocol ICatalogViewModel: ObservableObject {
     func onAppear() async
+    
     var recipes: [Recipe] { get set }
     var categories: [String] { get set }
     var selectedCategory: String? { get set }
