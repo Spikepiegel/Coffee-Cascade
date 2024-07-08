@@ -46,6 +46,63 @@
 		455D402D2C3AFC1C00C03278 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D402B2C3AFBDD00C03278 /* BlurView.swift */; };
 		455D402E2C3AFC1D00C03278 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D402B2C3AFBDD00C03278 /* BlurView.swift */; };
 		455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D402F2C3AFDA000C03278 /* CatalogBottomNavigator.swift */; };
+		455D40332C3B58AD00C03278 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40322C3B58AD00C03278 /* ProductDetailView.swift */; };
+		455D40352C3B5A0000C03278 /* ProductKFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40342C3B5A0000C03278 /* ProductKFImage.swift */; };
+		456FE7032C3C7883002BDE03 /* GestureHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7022C3C7883002BDE03 /* GestureHandlingView.swift */; };
+		456FE7052C3C8B49002BDE03 /* CloseButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7042C3C8B49002BDE03 /* CloseButtonImage.swift */; };
+		456FE7072C3C8B56002BDE03 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7062C3C8B56002BDE03 /* DragState.swift */; };
+		456FE7092C3C8CB9002BDE03 /* DetailScrollContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7082C3C8CB9002BDE03 /* DetailScrollContent.swift */; };
+		456FE70A2C3C9237002BDE03 /* GestureHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7022C3C7883002BDE03 /* GestureHandlingView.swift */; };
+		456FE70B2C3C9238002BDE03 /* GestureHandlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7022C3C7883002BDE03 /* GestureHandlingView.swift */; };
+		456FE70C2C3C923B002BDE03 /* ProductKFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40342C3B5A0000C03278 /* ProductKFImage.swift */; };
+		456FE70D2C3C923C002BDE03 /* ProductKFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40342C3B5A0000C03278 /* ProductKFImage.swift */; };
+		456FE70F2C3C934A002BDE03 /* DetailRecipeIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */; };
+		456FE7102C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */; };
+		456FE7112C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */; };
+		456FE7122C3C9386002BDE03 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40322C3B58AD00C03278 /* ProductDetailView.swift */; };
+		456FE7132C3C9386002BDE03 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40322C3B58AD00C03278 /* ProductDetailView.swift */; };
+		456FE7152C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */; };
+		456FE7162C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */; };
+		456FE7172C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */; };
+		456FE7182C3C9520002BDE03 /* DetailScrollContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7082C3C8CB9002BDE03 /* DetailScrollContent.swift */; };
+		456FE7192C3C9521002BDE03 /* DetailScrollContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7082C3C8CB9002BDE03 /* DetailScrollContent.swift */; };
+		456FE71B2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */; };
+		456FE71C2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */; };
+		456FE71D2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */; };
+		456FE71E2C3C959F002BDE03 /* CloseButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7042C3C8B49002BDE03 /* CloseButtonImage.swift */; };
+		456FE71F2C3C959F002BDE03 /* CloseButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7042C3C8B49002BDE03 /* CloseButtonImage.swift */; };
+		456FE7202C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D401E2C3AE16C00C03278 /* MockCatalogViewModel.swift */; };
+		456FE7212C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D401E2C3AE16C00C03278 /* MockCatalogViewModel.swift */; };
+		456FE7222C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674B62C3A1477009DA332 /* CatalogViewModel.swift */; };
+		456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674B62C3A1477009DA332 /* CatalogViewModel.swift */; };
+		456FE7252C3C95E2002BDE03 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFC2C3AA52D00C03278 /* RecipeService.swift */; };
+		456FE7262C3C95E2002BDE03 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFC2C3AA52D00C03278 /* RecipeService.swift */; };
+		456FE7272C3C95F8002BDE03 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7062C3C8B56002BDE03 /* DragState.swift */; };
+		456FE7282C3C95F9002BDE03 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FE7062C3C8B56002BDE03 /* DragState.swift */; };
+		456FE7292C3C9609002BDE03 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FF82C3AA47F00C03278 /* DataRepository.swift */; };
+		456FE72A2C3C9609002BDE03 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FF82C3AA47F00C03278 /* DataRepository.swift */; };
+		456FE72B2C3C9617002BDE03 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFA2C3AA4C600C03278 /* HTTPMethod.swift */; };
+		456FE72C2C3C9617002BDE03 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFA2C3AA4C600C03278 /* HTTPMethod.swift */; };
+		456FE72D2C3C961C002BDE03 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40292C3AF22C00C03278 /* Color+Extension.swift */; };
+		456FE72E2C3C961D002BDE03 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40292C3AF22C00C03278 /* Color+Extension.swift */; };
+		456FE72F2C3C9622002BDE03 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40272C3AF1EB00C03278 /* CustomColor.swift */; };
+		456FE7302C3C9622002BDE03 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40272C3AF1EB00C03278 /* CustomColor.swift */; };
+		456FE7312C3C9628002BDE03 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFE2C3AA55000C03278 /* Router.swift */; };
+		456FE7322C3C9628002BDE03 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFE2C3AA55000C03278 /* Router.swift */; };
+		456FE7332C3C962B002BDE03 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D400A2C3AC30700C03278 /* AppConstants.swift */; };
+		456FE7342C3C962B002BDE03 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D400A2C3AC30700C03278 /* AppConstants.swift */; };
+		456FE7352C3C963E002BDE03 /* CategoriesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40152C3ADBD600C03278 /* CategoriesScrollView.swift */; };
+		456FE7362C3C963F002BDE03 /* CategoriesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D40152C3ADBD600C03278 /* CategoriesScrollView.swift */; };
+		456FE7372C3C9641002BDE03 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674AE2C3A0F21009DA332 /* CatalogView.swift */; };
+		456FE7382C3C9641002BDE03 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674AE2C3A0F21009DA332 /* CatalogView.swift */; };
+		456FE7392C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D402F2C3AFDA000C03278 /* CatalogBottomNavigator.swift */; };
+		456FE73A2C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D402F2C3AFDA000C03278 /* CatalogBottomNavigator.swift */; };
+		456FE73B2C3C9648002BDE03 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167692C3A0D210053D22E /* AppSetup.swift */; };
+		456FE73C2C3C9648002BDE03 /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167692C3A0D210053D22E /* AppSetup.swift */; };
+		456FE73D2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453167702C3A0D210053D22E /* Preview Assets.xcassets */; };
+		456FE73E2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453167702C3A0D210053D22E /* Preview Assets.xcassets */; };
+		456FE73F2C3C964E002BDE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
+		456FE7402C3C964E002BDE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +150,15 @@
 		455D40292C3AF22C00C03278 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		455D402B2C3AFBDD00C03278 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		455D402F2C3AFDA000C03278 /* CatalogBottomNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBottomNavigator.swift; sourceTree = "<group>"; };
+		455D40322C3B58AD00C03278 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		455D40342C3B5A0000C03278 /* ProductKFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductKFImage.swift; sourceTree = "<group>"; };
+		456FE7022C3C7883002BDE03 /* GestureHandlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureHandlingView.swift; sourceTree = "<group>"; };
+		456FE7042C3C8B49002BDE03 /* CloseButtonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButtonImage.swift; sourceTree = "<group>"; };
+		456FE7062C3C8B56002BDE03 /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
+		456FE7082C3C8CB9002BDE03 /* DetailScrollContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollContent.swift; sourceTree = "<group>"; };
+		456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeIngredientView.swift; sourceTree = "<group>"; };
+		456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRecipeInstructionsView.swift; sourceTree = "<group>"; };
+		456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollOverlayContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +262,7 @@
 		454674AC2C3A0EC5009DA332 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				455D40312C3B587D00C03278 /* ProductDetail */,
 				454674AD2C3A0F0D009DA332 /* Catalog */,
 			);
 			path = Modules;
@@ -223,6 +290,7 @@
 		454674B12C3A0F69009DA332 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				456FE7012C3C787D002BDE03 /* UsefulUI */,
 				454674B22C3A0F73009DA332 /* ReusableUI */,
 			);
 			path = Presentation;
@@ -233,6 +301,8 @@
 			children = (
 				455D40082C3AC07A00C03278 /* CoffeeView.swift */,
 				455D402B2C3AFBDD00C03278 /* BlurView.swift */,
+				455D40342C3B5A0000C03278 /* ProductKFImage.swift */,
+				456FE7042C3C8B49002BDE03 /* CloseButtonImage.swift */,
 			);
 			path = ReusableUI;
 			sourceTree = "<group>";
@@ -314,6 +384,35 @@
 				455D40272C3AF1EB00C03278 /* CustomColor.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		455D40312C3B587D00C03278 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				456FE7242C3C95BE002BDE03 /* Views */,
+				455D40322C3B58AD00C03278 /* ProductDetailView.swift */,
+				456FE7062C3C8B56002BDE03 /* DragState.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		456FE7012C3C787D002BDE03 /* UsefulUI */ = {
+			isa = PBXGroup;
+			children = (
+				456FE7022C3C7883002BDE03 /* GestureHandlingView.swift */,
+			);
+			path = UsefulUI;
+			sourceTree = "<group>";
+		};
+		456FE7242C3C95BE002BDE03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				456FE7082C3C8CB9002BDE03 /* DetailScrollContent.swift */,
+				456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */,
+				456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */,
+				456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +541,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456FE73D2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */,
+				456FE73F2C3C964E002BDE03 /* Assets.xcassets in Resources */,
 				455D400E2C3AC39D00C03278 /* Environment.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +551,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456FE73E2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */,
+				456FE7402C3C964E002BDE03 /* Assets.xcassets in Resources */,
 				455D400F2C3AC39D00C03278 /* Environment.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,16 +566,25 @@
 			files = (
 				455D40042C3AA7F500C03278 /* Instruction.swift in Sources */,
 				454674AF2C3A0F21009DA332 /* CatalogView.swift in Sources */,
+				456FE7052C3C8B49002BDE03 /* CloseButtonImage.swift in Sources */,
 				455D3FFD2C3AA52D00C03278 /* RecipeService.swift in Sources */,
 				455D40122C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
 				455D400B2C3AC30700C03278 /* AppConstants.swift in Sources */,
+				456FE71B2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
+				456FE7072C3C8B56002BDE03 /* DragState.swift in Sources */,
+				455D40332C3B58AD00C03278 /* ProductDetailView.swift in Sources */,
 				455D3FFF2C3AA55000C03278 /* Router.swift in Sources */,
+				456FE7092C3C8CB9002BDE03 /* DetailScrollContent.swift in Sources */,
 				455D40092C3AC07A00C03278 /* CoffeeView.swift in Sources */,
+				456FE7032C3C7883002BDE03 /* GestureHandlingView.swift in Sources */,
+				455D40352C3B5A0000C03278 /* ProductKFImage.swift in Sources */,
 				455D402A2C3AF22C00C03278 /* Color+Extension.swift in Sources */,
+				456FE7152C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
 				455D3FF92C3AA47F00C03278 /* DataRepository.swift in Sources */,
 				455D40282C3AF1EB00C03278 /* CustomColor.swift in Sources */,
 				4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */,
 				455D3FFB2C3AA4C600C03278 /* HTTPMethod.swift in Sources */,
+				456FE70F2C3C934A002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				455D401F2C3AE16C00C03278 /* MockCatalogViewModel.swift in Sources */,
 				455D402C2C3AFBDD00C03278 /* BlurView.swift in Sources */,
 				455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */,
@@ -486,10 +598,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456FE7352C3C963E002BDE03 /* CategoriesScrollView.swift in Sources */,
 				455D40172C3ADF3A00C03278 /* Recipe.swift in Sources */,
+				456FE72D2C3C961C002BDE03 /* Color+Extension.swift in Sources */,
+				456FE72F2C3C9622002BDE03 /* CustomColor.swift in Sources */,
+				456FE7122C3C9386002BDE03 /* ProductDetailView.swift in Sources */,
+				456FE70A2C3C9237002BDE03 /* GestureHandlingView.swift in Sources */,
+				456FE7202C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */,
+				456FE73B2C3C9648002BDE03 /* AppSetup.swift in Sources */,
+				456FE71C2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
 				4531677B2C3A0D220053D22E /* Coffee_CascadeTests.swift in Sources */,
+				456FE7252C3C95E2002BDE03 /* RecipeService.swift in Sources */,
 				455D40192C3ADF4B00C03278 /* CoffeeView.swift in Sources */,
+				456FE72B2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
+				456FE7292C3C9609002BDE03 /* DataRepository.swift in Sources */,
+				456FE70C2C3C923B002BDE03 /* ProductKFImage.swift in Sources */,
+				456FE7392C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
+				456FE7372C3C9641002BDE03 /* CatalogView.swift in Sources */,
+				456FE7222C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
 				455D401B2C3ADF5100C03278 /* Instruction.swift in Sources */,
+				456FE7102C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
+				456FE7312C3C9628002BDE03 /* Router.swift in Sources */,
+				456FE7162C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
+				456FE7272C3C95F8002BDE03 /* DragState.swift in Sources */,
+				456FE7332C3C962B002BDE03 /* AppConstants.swift in Sources */,
+				456FE71E2C3C959F002BDE03 /* CloseButtonImage.swift in Sources */,
+				456FE7182C3C9520002BDE03 /* DetailScrollContent.swift in Sources */,
 				455D40132C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
 				455D402D2C3AFC1C00C03278 /* BlurView.swift in Sources */,
 			);
@@ -500,11 +634,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				455D401C2C3ADF5100C03278 /* Instruction.swift in Sources */,
+				456FE73C2C3C9648002BDE03 /* AppSetup.swift in Sources */,
+				456FE7362C3C963F002BDE03 /* CategoriesScrollView.swift in Sources */,
+				456FE72A2C3C9609002BDE03 /* DataRepository.swift in Sources */,
+				456FE72C2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
 				455D402E2C3AFC1D00C03278 /* BlurView.swift in Sources */,
+				456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
+				456FE7282C3C95F9002BDE03 /* DragState.swift in Sources */,
+				456FE71D2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
+				456FE7132C3C9386002BDE03 /* ProductDetailView.swift in Sources */,
 				455D40142C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
+				456FE7382C3C9641002BDE03 /* CatalogView.swift in Sources */,
+				456FE72E2C3C961D002BDE03 /* Color+Extension.swift in Sources */,
+				456FE71F2C3C959F002BDE03 /* CloseButtonImage.swift in Sources */,
+				456FE7212C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */,
+				456FE70B2C3C9238002BDE03 /* GestureHandlingView.swift in Sources */,
 				453167852C3A0D220053D22E /* Coffee_CascadeUITests.swift in Sources */,
 				453167872C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift in Sources */,
+				456FE7192C3C9521002BDE03 /* DetailScrollContent.swift in Sources */,
+				456FE7322C3C9628002BDE03 /* Router.swift in Sources */,
 				455D40182C3ADF3B00C03278 /* Recipe.swift in Sources */,
+				456FE7262C3C95E2002BDE03 /* RecipeService.swift in Sources */,
+				456FE7342C3C962B002BDE03 /* AppConstants.swift in Sources */,
+				456FE7172C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
+				456FE70D2C3C923C002BDE03 /* ProductKFImage.swift in Sources */,
+				456FE7302C3C9622002BDE03 /* CustomColor.swift in Sources */,
+				456FE7112C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
+				456FE73A2C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
 				455D401A2C3ADF4C00C03278 /* CoffeeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

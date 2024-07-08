@@ -8,10 +8,12 @@
 import SwiftUI
 import Kingfisher
 
+import SwiftUI
+
 struct CatalogView<ViewModel: ICatalogViewModel>: View {
-    
     @StateObject var viewModel: ViewModel
-    
+    @State private var selectedRecipe: Recipe?
+
     var body: some View {
         ZStack {
             LinearGradient(
@@ -20,17 +22,24 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                 endPoint: .bottom
             )
             .ignoresSafeArea()
-            
+
             VStack {
                 CategoriesScrollView(
                     categories: $viewModel.categories,
                     selectedCategory: $viewModel.selectedCategory
                 )
                 .frame(height: 80)
+
+                Spacer()
+
+                RecipeScrollView(
+                    recipes: $viewModel.filteredRecipes,
+                    selectedRecipe: $selectedRecipe,
+                    selectedCategory: $viewModel.selectedCategory
+                )
                 
-                
-                RecipeScrollView(recipes: $viewModel.filteredRecipes)
-                
+                Spacer()
+
                 CatalogBottomNavigator()
                     .padding(.bottom, 5)
             }
@@ -40,31 +49,9 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                 await viewModel.onAppear()
             }
         }
-    }
-}
-
-struct RecipeDetailView: View {
-    let recipe: Recipe
-    var namespace: Namespace.ID
-
-    var body: some View {
-        VStack {
-            KFImage(URL(string: recipe.image))
-                .resizable()
-                .scaledToFill()
-                .frame(height: 300)
-                .clipShape(RoundedRectangle(cornerRadius: 36))
-                .matchedGeometryEffect(id: recipe.id, in: namespace)
-                .padding()
-
-            Text(recipe.name)
-                .font(.largeTitle)
-                .padding()
-            
-            Spacer()
+        .fullScreenCover(item: $selectedRecipe) { recipe in
+            ProductDetailView(recipe: recipe)
         }
-        .navigationTitle(recipe.name)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
