@@ -12,7 +12,7 @@ enum CustomColor: String {
     case mainTopGradient = "MainTopGradient"
     case mainBottomGradient = "MainBottomGradient"
     case categoryColor = "CategoryColor"
-    case grayComponent = "GrayComponent"
+    case grayComponent = "grayComponent"
     case darkGrayComponent = "DarkGrayComponent"
     
     var name: String {

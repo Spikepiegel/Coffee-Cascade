@@ -30,15 +30,23 @@ struct CoffeeView: View {
 
             VStack {
                 Spacer()
-                Text(name)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 50)
-                    .background(
-                        BlurView(style: .systemMaterialDark)
-                    )
+                VStack {
+                    GeometryReader { geometry in
+                        Text(name)
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .frame(height: geometry.size.height, alignment: .top)
+                            .background(
+                                BlurView(style: .systemMaterialDark)
+                            )
+                            .lineLimit(nil)
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    .frame(height: 50) // Высота текстового блока
+                }
             }
         }
         .clipShape(RoundedRectangle(cornerRadius: 36))
