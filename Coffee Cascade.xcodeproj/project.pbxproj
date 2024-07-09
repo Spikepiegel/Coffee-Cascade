@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451532522C3D7A63003D7F08 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 451532512C3D7A62003D7F08 /* Inter-SemiBold.otf */; };
+		451532542C3D7C6F003D7F08 /* CatalogTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */; };
+		451532552C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */; };
+		451532562C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */; };
 		4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167692C3A0D210053D22E /* AppSetup.swift */; };
 		4531676E2C3A0D210053D22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
 		453167712C3A0D210053D22E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453167702C3A0D210053D22E /* Preview Assets.xcassets */; };
@@ -103,6 +107,12 @@
 		456FE73E2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453167702C3A0D210053D22E /* Preview Assets.xcassets */; };
 		456FE73F2C3C964E002BDE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
 		456FE7402C3C964E002BDE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
+		45FB71442C3D71F00029ADE6 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 45FB71432C3D71F00029ADE6 /* Inter-Light.otf */; };
+		45FB71452C3D71F00029ADE6 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 45FB71432C3D71F00029ADE6 /* Inter-Light.otf */; };
+		45FB71462C3D71F00029ADE6 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 45FB71432C3D71F00029ADE6 /* Inter-Light.otf */; };
+		45FB71482C3D72120029ADE6 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB71472C3D72120029ADE6 /* CustomFont.swift */; };
+		45FB71492C3D72120029ADE6 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB71472C3D72120029ADE6 /* CustomFont.swift */; };
+		45FB714A2C3D72120029ADE6 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB71472C3D72120029ADE6 /* CustomFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +133,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		451532512C3D7A62003D7F08 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter (1)/Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTopNavigationView.swift; sourceTree = "<group>"; };
+		4530F2F32C3D76E3007993EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4530F2F52C3D76F8007993EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		453167662C3A0D210053D22E /* Coffee Cascade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Cascade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		453167692C3A0D210053D22E /* AppSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetup.swift; sourceTree = "<group>"; };
 		4531676D2C3A0D210053D22E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +173,9 @@
 		456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeIngredientView.swift; sourceTree = "<group>"; };
 		456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRecipeInstructionsView.swift; sourceTree = "<group>"; };
 		456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollOverlayContent.swift; sourceTree = "<group>"; };
+		45FB71432C3D71F00029ADE6 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter (1)/Inter-Light.otf"; sourceTree = "<group>"; };
+		45FB71472C3D72120029ADE6 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		45FB714B2C3D72550029ADE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +206,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		451532572C3D7F12003D7F08 /* CatalogSearch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CatalogSearch;
+			sourceTree = "<group>";
+		};
 		4531675D2C3A0D210053D22E = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				4531677A2C3A0D220053D22E /* Coffee_CascadeTests.swift */,
+				4530F2F32C3D76E3007993EF /* Info.plist */,
 			);
 			path = "Coffee CascadeTests";
 			sourceTree = "<group>";
@@ -246,6 +271,7 @@
 			children = (
 				453167842C3A0D220053D22E /* Coffee_CascadeUITests.swift */,
 				453167862C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift */,
+				4530F2F52C3D76F8007993EF /* Info.plist */,
 			);
 			path = "Coffee CascadeUITests";
 			sourceTree = "<group>";
@@ -255,6 +281,7 @@
 			children = (
 				453167692C3A0D210053D22E /* AppSetup.swift */,
 				4531676D2C3A0D210053D22E /* Assets.xcassets */,
+				45FB714B2C3D72550029ADE6 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -262,6 +289,7 @@
 		454674AC2C3A0EC5009DA332 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				451532572C3D7F12003D7F08 /* CatalogSearch */,
 				455D40312C3B587D00C03278 /* ProductDetail */,
 				454674AD2C3A0F0D009DA332 /* Catalog */,
 			);
@@ -274,7 +302,6 @@
 				455D40102C3AC96100C03278 /* Views */,
 				454674AE2C3A0F21009DA332 /* CatalogView.swift */,
 				454674B62C3A1477009DA332 /* CatalogViewModel.swift */,
-				455D402F2C3AFDA000C03278 /* CatalogBottomNavigator.swift */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -346,7 +373,9 @@
 			isa = PBXGroup;
 			children = (
 				455D40112C3AC98D00C03278 /* RecipeScrollView.swift */,
+				455D402F2C3AFDA000C03278 /* CatalogBottomNavigator.swift */,
 				455D40152C3ADBD600C03278 /* CategoriesScrollView.swift */,
+				451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,7 +410,9 @@
 		455D40262C3AF1E500C03278 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				45FB71422C3D71770029ADE6 /* Fonts */,
 				455D40272C3AF1EB00C03278 /* CustomColor.swift */,
+				45FB71472C3D72120029ADE6 /* CustomFont.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -413,6 +444,15 @@
 				456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		45FB71422C3D71770029ADE6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				451532512C3D7A62003D7F08 /* Inter-SemiBold.otf */,
+				45FB71432C3D71F00029ADE6 /* Inter-Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,7 +572,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				453167712C3A0D210053D22E /* Preview Assets.xcassets in Resources */,
+				45FB71442C3D71F00029ADE6 /* Inter-Light.otf in Resources */,
 				455D400D2C3AC39D00C03278 /* Environment.plist in Resources */,
+				451532522C3D7A63003D7F08 /* Inter-SemiBold.otf in Resources */,
 				4531676E2C3A0D210053D22E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				456FE73D2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */,
+				45FB71452C3D71F00029ADE6 /* Inter-Light.otf in Resources */,
 				456FE73F2C3C964E002BDE03 /* Assets.xcassets in Resources */,
 				455D400E2C3AC39D00C03278 /* Environment.plist in Resources */,
 			);
@@ -552,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				456FE73E2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */,
+				45FB71462C3D71F00029ADE6 /* Inter-Light.otf in Resources */,
 				456FE7402C3C964E002BDE03 /* Assets.xcassets in Resources */,
 				455D400F2C3AC39D00C03278 /* Environment.plist in Resources */,
 			);
@@ -578,6 +622,7 @@
 				455D40092C3AC07A00C03278 /* CoffeeView.swift in Sources */,
 				456FE7032C3C7883002BDE03 /* GestureHandlingView.swift in Sources */,
 				455D40352C3B5A0000C03278 /* ProductKFImage.swift in Sources */,
+				451532542C3D7C6F003D7F08 /* CatalogTopNavigationView.swift in Sources */,
 				455D402A2C3AF22C00C03278 /* Color+Extension.swift in Sources */,
 				456FE7152C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
 				455D3FF92C3AA47F00C03278 /* DataRepository.swift in Sources */,
@@ -585,6 +630,7 @@
 				4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */,
 				455D3FFB2C3AA4C600C03278 /* HTTPMethod.swift in Sources */,
 				456FE70F2C3C934A002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
+				45FB71482C3D72120029ADE6 /* CustomFont.swift in Sources */,
 				455D401F2C3AE16C00C03278 /* MockCatalogViewModel.swift in Sources */,
 				455D402C2C3AFBDD00C03278 /* BlurView.swift in Sources */,
 				455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */,
@@ -598,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FB71492C3D72120029ADE6 /* CustomFont.swift in Sources */,
 				456FE7352C3C963E002BDE03 /* CategoriesScrollView.swift in Sources */,
 				455D40172C3ADF3A00C03278 /* Recipe.swift in Sources */,
 				456FE72D2C3C961C002BDE03 /* Color+Extension.swift in Sources */,
@@ -613,6 +660,7 @@
 				456FE72B2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
 				456FE7292C3C9609002BDE03 /* DataRepository.swift in Sources */,
 				456FE70C2C3C923B002BDE03 /* ProductKFImage.swift in Sources */,
+				451532552C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */,
 				456FE7392C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
 				456FE7372C3C9641002BDE03 /* CatalogView.swift in Sources */,
 				456FE7222C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
@@ -639,6 +687,7 @@
 				456FE72A2C3C9609002BDE03 /* DataRepository.swift in Sources */,
 				456FE72C2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
 				455D402E2C3AFC1D00C03278 /* BlurView.swift in Sources */,
+				451532562C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */,
 				456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
 				456FE7282C3C95F9002BDE03 /* DragState.swift in Sources */,
 				456FE71D2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
@@ -648,6 +697,7 @@
 				456FE72E2C3C961D002BDE03 /* Color+Extension.swift in Sources */,
 				456FE71F2C3C959F002BDE03 /* CloseButtonImage.swift in Sources */,
 				456FE7212C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */,
+				45FB714A2C3D72120029ADE6 /* CustomFont.swift in Sources */,
 				456FE70B2C3C9238002BDE03 /* GestureHandlingView.swift in Sources */,
 				453167852C3A0D220053D22E /* Coffee_CascadeUITests.swift in Sources */,
 				453167872C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift in Sources */,
@@ -809,8 +859,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffee Cascade/Preview Content\"";
 				DEVELOPMENT_TEAM = YGKQ6UQ529;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Coffee Cascade/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -839,8 +891,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffee Cascade/Preview Content\"";
 				DEVELOPMENT_TEAM = YGKQ6UQ529;
+				DONT_GENERATE_INFOPLIST_FILE = NO;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Coffee Cascade/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -869,6 +923,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YGKQ6UQ529;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spikespiegel.Coffee-CascadeTests";
@@ -889,6 +944,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YGKQ6UQ529;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spikespiegel.Coffee-CascadeTests";
@@ -908,6 +964,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YGKQ6UQ529;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spikespiegel.Coffee-CascadeUITests";
@@ -927,6 +984,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YGKQ6UQ529;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.spikespiegel.Coffee-CascadeUITests";

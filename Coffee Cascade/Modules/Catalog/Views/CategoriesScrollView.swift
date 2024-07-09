@@ -16,14 +16,12 @@ struct CategoriesScrollView: View {
             LazyHStack(spacing: 10) {
                 ForEach(categories, id: \.self) { category in
                     Text(category)
-                        .padding()
-                        .background(Color.custom(.categoryColor))
-                        .foregroundColor(.white)
+                        .font(CustomFont.custom(.interLight, size: 12))
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 16)
+                        .background(category == selectedCategory ? Color.custom(.darkGrayComponent) : Color.custom(.grayComponent))
+                        .foregroundColor(category == selectedCategory ? Color.white : Color.black)
                         .clipShape(Capsule())
-                        .overlay(
-                            Capsule()
-                                .stroke(category == selectedCategory ? Color.white : Color.clear, lineWidth: 2)
-                        )
                         .onTapGesture {
                             selectedCategory = category == selectedCategory ? nil : category
                         }
@@ -33,6 +31,3 @@ struct CategoriesScrollView: View {
         }
     }
 }
-
-
-
