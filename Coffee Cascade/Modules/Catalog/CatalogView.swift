@@ -8,27 +8,24 @@
 import SwiftUI
 import Kingfisher
 
-import SwiftUI
-
 struct CatalogView<ViewModel: ICatalogViewModel>: View {
     @StateObject var viewModel: ViewModel
     @State private var selectedRecipe: Recipe?
 
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [.custom(.mainTopGradient), .custom(.mainBottomGradient)],
-                startPoint: .top,
-                endPoint: .bottom
-            )
+            Color.white
             .ignoresSafeArea()
 
             VStack {
+                
+                CatalogTopNavigationView()
+                
                 CategoriesScrollView(
                     categories: $viewModel.categories,
                     selectedCategory: $viewModel.selectedCategory
                 )
-                .frame(height: 80)
+                .frame(height: 32)
 
                 Spacer()
 
@@ -40,8 +37,8 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                 
                 Spacer()
 
-                CatalogBottomNavigator()
-                    .padding(.bottom, 5)
+//                CatalogBottomNavigator()
+//                    .padding(.bottom, 5)
             }
         }
         .onAppear {
@@ -59,3 +56,5 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
     let viewModel = MockCatalogViewModel()
     return CatalogView(viewModel: viewModel)
 }
+
+
