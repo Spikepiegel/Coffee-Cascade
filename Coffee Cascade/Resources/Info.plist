@@ -12,6 +12,7 @@
 	<string>1.0.0</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Inter-Bold</string>
 		<string>Inter-SemiBold</string>
 		<string>Inter-Light</string>
 	</array>

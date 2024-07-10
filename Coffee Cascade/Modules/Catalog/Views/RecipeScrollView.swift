@@ -58,3 +58,18 @@ struct RecipeScrollView: View {
         }
     }
 }
+
+struct ShimmerView: View {
+    @State private var isAnimating = false
+
+    var body: some View {
+        Rectangle()
+            .fill(LinearGradient(gradient: Gradient(colors: [.gray.opacity(0.3), .gray.opacity(0.1), .gray.opacity(0.3)]), startPoint: .leading, endPoint: .trailing))
+            .rotationEffect(Angle(degrees: 70))
+            .offset(x: isAnimating ? 300 : -300)
+            .animation(Animation.linear(duration: 1.5).repeatForever(autoreverses: false), value: isAnimating)
+            .onAppear {
+                isAnimating = true
+            }
+    }
+}

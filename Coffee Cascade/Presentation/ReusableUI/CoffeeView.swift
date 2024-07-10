@@ -16,7 +16,16 @@ struct CoffeeView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             GestureHandlingView {
-                ProductKFImage(image: image)
+                KFImage(URL(string: image))
+                    .placeholder {
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFill()
+                            .clipped()
+                    }
+                    .resizable()
+                    .scaledToFill()
+                    .clipped()
                     .scrollTransition(axis: .horizontal) { content, phase in
                         content
                             .offset(x: phase.isIdentity ? 0 : phase.value * -200)
@@ -45,7 +54,7 @@ struct CoffeeView: View {
                             .multilineTextAlignment(.center)
                             .fixedSize(horizontal: false, vertical: true)
                     }
-                    .frame(height: 50) // Высота текстового блока
+                    .frame(height: 50)
                 }
             }
         }

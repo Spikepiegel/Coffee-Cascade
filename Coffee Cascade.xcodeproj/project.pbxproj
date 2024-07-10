@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450E57A82C3DD10D00115C50 /* CatalogSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57A72C3DD10D00115C50 /* CatalogSearchView.swift */; };
+		450E57A92C3DD10D00115C50 /* CatalogSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57A72C3DD10D00115C50 /* CatalogSearchView.swift */; };
+		450E57AA2C3DD10D00115C50 /* CatalogSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57A72C3DD10D00115C50 /* CatalogSearchView.swift */; };
+		450E57AC2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57AB2C3DD28100115C50 /* CatalogSearchViewModel.swift */; };
+		450E57AD2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57AB2C3DD28100115C50 /* CatalogSearchViewModel.swift */; };
+		450E57AE2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57AB2C3DD28100115C50 /* CatalogSearchViewModel.swift */; };
+		450E57B12C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B02C3DD77400115C50 /* CatalogSearchTopNavigationView.swift */; };
+		450E57B22C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B02C3DD77400115C50 /* CatalogSearchTopNavigationView.swift */; };
+		450E57B32C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B02C3DD77400115C50 /* CatalogSearchTopNavigationView.swift */; };
+		450E57B52C3DD96A00115C50 /* RecipeSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B42C3DD96A00115C50 /* RecipeSearchService.swift */; };
+		450E57B62C3DD96A00115C50 /* RecipeSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B42C3DD96A00115C50 /* RecipeSearchService.swift */; };
+		450E57B72C3DD96A00115C50 /* RecipeSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B42C3DD96A00115C50 /* RecipeSearchService.swift */; };
+		450E57B92C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B82C3DDCD800115C50 /* CatalogSearchBar.swift */; };
+		450E57BA2C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B82C3DDCD800115C50 /* CatalogSearchBar.swift */; };
+		450E57BB2C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E57B82C3DDCD800115C50 /* CatalogSearchBar.swift */; };
+		450E57BD2C3DDD7B00115C50 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 450E57BC2C3DDD7B00115C50 /* Inter-Bold.otf */; };
+		450E57BE2C3DDD7B00115C50 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 450E57BC2C3DDD7B00115C50 /* Inter-Bold.otf */; };
+		450E57BF2C3DDD7B00115C50 /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 450E57BC2C3DDD7B00115C50 /* Inter-Bold.otf */; };
 		451532522C3D7A63003D7F08 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 451532512C3D7A62003D7F08 /* Inter-SemiBold.otf */; };
 		451532542C3D7C6F003D7F08 /* CatalogTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */; };
 		451532552C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */; };
@@ -133,6 +151,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450E57A72C3DD10D00115C50 /* CatalogSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchView.swift; sourceTree = "<group>"; };
+		450E57AB2C3DD28100115C50 /* CatalogSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchViewModel.swift; sourceTree = "<group>"; };
+		450E57B02C3DD77400115C50 /* CatalogSearchTopNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchTopNavigationView.swift; sourceTree = "<group>"; };
+		450E57B42C3DD96A00115C50 /* RecipeSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchService.swift; sourceTree = "<group>"; };
+		450E57B82C3DDCD800115C50 /* CatalogSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSearchBar.swift; sourceTree = "<group>"; };
+		450E57BC2C3DDD7B00115C50 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Bold.otf"; path = "../../../../../../../Downloads/Inter (1)/Inter-Bold.otf"; sourceTree = "<group>"; };
 		451532512C3D7A62003D7F08 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter (1)/Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		451532532C3D7C6F003D7F08 /* CatalogTopNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTopNavigationView.swift; sourceTree = "<group>"; };
 		4530F2F32C3D76E3007993EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,9 +230,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450E57AF2C3DD70700115C50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				450E57B02C3DD77400115C50 /* CatalogSearchTopNavigationView.swift */,
+				450E57B82C3DDCD800115C50 /* CatalogSearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		451532572C3D7F12003D7F08 /* CatalogSearch */ = {
 			isa = PBXGroup;
 			children = (
+				450E57AF2C3DD70700115C50 /* Views */,
+				450E57A72C3DD10D00115C50 /* CatalogSearchView.swift */,
+				450E57AB2C3DD28100115C50 /* CatalogSearchViewModel.swift */,
 			);
 			path = CatalogSearch;
 			sourceTree = "<group>";
@@ -346,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				455D3FFC2C3AA52D00C03278 /* RecipeService.swift */,
+				450E57B42C3DD96A00115C50 /* RecipeSearchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -449,6 +486,7 @@
 		45FB71422C3D71770029ADE6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				450E57BC2C3DDD7B00115C50 /* Inter-Bold.otf */,
 				451532512C3D7A62003D7F08 /* Inter-SemiBold.otf */,
 				45FB71432C3D71F00029ADE6 /* Inter-Light.otf */,
 			);
@@ -576,6 +614,7 @@
 				455D400D2C3AC39D00C03278 /* Environment.plist in Resources */,
 				451532522C3D7A63003D7F08 /* Inter-SemiBold.otf in Resources */,
 				4531676E2C3A0D210053D22E /* Assets.xcassets in Resources */,
+				450E57BD2C3DDD7B00115C50 /* Inter-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				456FE73D2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */,
+				450E57BE2C3DDD7B00115C50 /* Inter-Bold.otf in Resources */,
 				45FB71452C3D71F00029ADE6 /* Inter-Light.otf in Resources */,
 				456FE73F2C3C964E002BDE03 /* Assets.xcassets in Resources */,
 				455D400E2C3AC39D00C03278 /* Environment.plist in Resources */,
@@ -595,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				456FE73E2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */,
+				450E57BF2C3DDD7B00115C50 /* Inter-Bold.otf in Resources */,
 				45FB71462C3D71F00029ADE6 /* Inter-Light.otf in Resources */,
 				456FE7402C3C964E002BDE03 /* Assets.xcassets in Resources */,
 				455D400F2C3AC39D00C03278 /* Environment.plist in Resources */,
@@ -622,19 +663,24 @@
 				455D40092C3AC07A00C03278 /* CoffeeView.swift in Sources */,
 				456FE7032C3C7883002BDE03 /* GestureHandlingView.swift in Sources */,
 				455D40352C3B5A0000C03278 /* ProductKFImage.swift in Sources */,
+				450E57B12C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */,
 				451532542C3D7C6F003D7F08 /* CatalogTopNavigationView.swift in Sources */,
 				455D402A2C3AF22C00C03278 /* Color+Extension.swift in Sources */,
 				456FE7152C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
 				455D3FF92C3AA47F00C03278 /* DataRepository.swift in Sources */,
+				450E57AC2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */,
+				450E57A82C3DD10D00115C50 /* CatalogSearchView.swift in Sources */,
 				455D40282C3AF1EB00C03278 /* CustomColor.swift in Sources */,
 				4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */,
 				455D3FFB2C3AA4C600C03278 /* HTTPMethod.swift in Sources */,
+				450E57B52C3DD96A00115C50 /* RecipeSearchService.swift in Sources */,
 				456FE70F2C3C934A002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				45FB71482C3D72120029ADE6 /* CustomFont.swift in Sources */,
 				455D401F2C3AE16C00C03278 /* MockCatalogViewModel.swift in Sources */,
 				455D402C2C3AFBDD00C03278 /* BlurView.swift in Sources */,
 				455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */,
 				454674B72C3A1477009DA332 /* CatalogViewModel.swift in Sources */,
+				450E57B92C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				455D40162C3ADBD600C03278 /* CategoriesScrollView.swift in Sources */,
 				455D40022C3AA7E900C03278 /* Recipe.swift in Sources */,
 			);
@@ -645,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FB71492C3D72120029ADE6 /* CustomFont.swift in Sources */,
+				450E57BA2C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				456FE7352C3C963E002BDE03 /* CategoriesScrollView.swift in Sources */,
 				455D40172C3ADF3A00C03278 /* Recipe.swift in Sources */,
 				456FE72D2C3C961C002BDE03 /* Color+Extension.swift in Sources */,
@@ -661,9 +708,12 @@
 				456FE7292C3C9609002BDE03 /* DataRepository.swift in Sources */,
 				456FE70C2C3C923B002BDE03 /* ProductKFImage.swift in Sources */,
 				451532552C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */,
+				450E57B62C3DD96A00115C50 /* RecipeSearchService.swift in Sources */,
 				456FE7392C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
 				456FE7372C3C9641002BDE03 /* CatalogView.swift in Sources */,
 				456FE7222C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
+				450E57AD2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */,
+				450E57A92C3DD10D00115C50 /* CatalogSearchView.swift in Sources */,
 				455D401B2C3ADF5100C03278 /* Instruction.swift in Sources */,
 				456FE7102C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				456FE7312C3C9628002BDE03 /* Router.swift in Sources */,
@@ -674,6 +724,7 @@
 				456FE7182C3C9520002BDE03 /* DetailScrollContent.swift in Sources */,
 				455D40132C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
 				455D402D2C3AFC1C00C03278 /* BlurView.swift in Sources */,
+				450E57B22C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,10 +734,12 @@
 			files = (
 				455D401C2C3ADF5100C03278 /* Instruction.swift in Sources */,
 				456FE73C2C3C9648002BDE03 /* AppSetup.swift in Sources */,
+				450E57B72C3DD96A00115C50 /* RecipeSearchService.swift in Sources */,
 				456FE7362C3C963F002BDE03 /* CategoriesScrollView.swift in Sources */,
 				456FE72A2C3C9609002BDE03 /* DataRepository.swift in Sources */,
 				456FE72C2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
 				455D402E2C3AFC1D00C03278 /* BlurView.swift in Sources */,
+				450E57B32C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */,
 				451532562C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */,
 				456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
 				456FE7282C3C95F9002BDE03 /* DragState.swift in Sources */,
@@ -701,6 +754,8 @@
 				456FE70B2C3C9238002BDE03 /* GestureHandlingView.swift in Sources */,
 				453167852C3A0D220053D22E /* Coffee_CascadeUITests.swift in Sources */,
 				453167872C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift in Sources */,
+				450E57AE2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */,
+				450E57BB2C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				456FE7192C3C9521002BDE03 /* DetailScrollContent.swift in Sources */,
 				456FE7322C3C9628002BDE03 /* Router.swift in Sources */,
 				455D40182C3ADF3B00C03278 /* Recipe.swift in Sources */,
@@ -711,6 +766,7 @@
 				456FE7302C3C9622002BDE03 /* CustomColor.swift in Sources */,
 				456FE7112C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				456FE73A2C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
+				450E57AA2C3DD10D00115C50 /* CatalogSearchView.swift in Sources */,
 				455D401A2C3ADF4C00C03278 /* CoffeeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

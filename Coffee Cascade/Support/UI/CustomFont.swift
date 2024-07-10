@@ -15,5 +15,6 @@ struct CustomFont {
     enum FontName: String {
         case interLight = "Inter-Light"
         case interSemiBold = "Inter-SemiBold"
+        case interBold = "Inter-Bold"
     }
 }

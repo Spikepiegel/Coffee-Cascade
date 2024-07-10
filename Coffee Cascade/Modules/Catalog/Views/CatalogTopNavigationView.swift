@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CatalogTopNavigationView: View {
+    let onSearchButtonTapped: () -> Void
+
     var body: some View {
         HStack {
             Text("MENU POINT")
@@ -17,7 +19,7 @@ struct CatalogTopNavigationView: View {
             Spacer()
             
             Button(action: {
-                // Действие для второй кнопки
+                onSearchButtonTapped()
             }) {
                 Image("nav-search-icon")
                     .resizable()
