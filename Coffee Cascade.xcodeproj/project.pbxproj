@@ -37,6 +37,9 @@
 		453167872C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453167862C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift */; };
 		454674AF2C3A0F21009DA332 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674AE2C3A0F21009DA332 /* CatalogView.swift */; };
 		454674B72C3A1477009DA332 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454674B62C3A1477009DA332 /* CatalogViewModel.swift */; };
+		4557C0742C4081FC00D94380 /* CoffeeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557C0732C4081FC00D94380 /* CoffeeSearchView.swift */; };
+		4557C0752C4081FC00D94380 /* CoffeeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557C0732C4081FC00D94380 /* CoffeeSearchView.swift */; };
+		4557C0762C4081FC00D94380 /* CoffeeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557C0732C4081FC00D94380 /* CoffeeSearchView.swift */; };
 		455D3FF92C3AA47F00C03278 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FF82C3AA47F00C03278 /* DataRepository.swift */; };
 		455D3FFB2C3AA4C600C03278 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFA2C3AA4C600C03278 /* HTTPMethod.swift */; };
 		455D3FFD2C3AA52D00C03278 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D3FFC2C3AA52D00C03278 /* RecipeService.swift */; };
@@ -172,6 +175,7 @@
 		453167862C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_CascadeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		454674AE2C3A0F21009DA332 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		454674B62C3A1477009DA332 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		4557C0732C4081FC00D94380 /* CoffeeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSearchView.swift; sourceTree = "<group>"; };
 		455D3FF82C3AA47F00C03278 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		455D3FFA2C3AA4C600C03278 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		455D3FFC2C3AA52D00C03278 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 			children = (
 				450E57B02C3DD77400115C50 /* CatalogSearchTopNavigationView.swift */,
 				450E57B82C3DDCD800115C50 /* CatalogSearchBar.swift */,
+				4557C0732C4081FC00D94380 /* CoffeeSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				455D401F2C3AE16C00C03278 /* MockCatalogViewModel.swift in Sources */,
 				455D402C2C3AFBDD00C03278 /* BlurView.swift in Sources */,
 				455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */,
+				4557C0742C4081FC00D94380 /* CoffeeSearchView.swift in Sources */,
 				454674B72C3A1477009DA332 /* CatalogViewModel.swift in Sources */,
 				450E57B92C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				455D40162C3ADBD600C03278 /* CategoriesScrollView.swift in Sources */,
@@ -700,6 +706,7 @@
 				456FE70A2C3C9237002BDE03 /* GestureHandlingView.swift in Sources */,
 				456FE7202C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */,
 				456FE73B2C3C9648002BDE03 /* AppSetup.swift in Sources */,
+				4557C0752C4081FC00D94380 /* CoffeeSearchView.swift in Sources */,
 				456FE71C2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
 				4531677B2C3A0D220053D22E /* Coffee_CascadeTests.swift in Sources */,
 				456FE7252C3C95E2002BDE03 /* RecipeService.swift in Sources */,
@@ -744,6 +751,7 @@
 				456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
 				456FE7282C3C95F9002BDE03 /* DragState.swift in Sources */,
 				456FE71D2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
+				4557C0762C4081FC00D94380 /* CoffeeSearchView.swift in Sources */,
 				456FE7132C3C9386002BDE03 /* ProductDetailView.swift in Sources */,
 				455D40142C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
 				456FE7382C3C9641002BDE03 /* CatalogView.swift in Sources */,
