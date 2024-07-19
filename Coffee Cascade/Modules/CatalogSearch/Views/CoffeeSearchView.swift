@@ -19,6 +19,9 @@ struct CoffeeSearchView: View {
         VStack {
             KFImage(URL(string: recipe.image))
                 .resizable()
+                .placeholder {
+                    ProgressView() // Placeholder while loading
+                }
                 .scaledToFill()
                 .frame(width: 170, height: 120)
                 .clipped()
@@ -28,11 +31,9 @@ struct CoffeeSearchView: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(recipe.name)
                         .font(CustomFont.custom(.interLight, size: 10))
-                        .font(.headline)
                         .padding(.top, 4)
                     Text("\(recipe.volume) ml")
                         .font(CustomFont.custom(.interLight, size: 10))
-                        .font(.subheadline)
                         .foregroundColor(.gray)
                 }
 
@@ -51,7 +52,8 @@ struct CoffeeSearchView: View {
                                 removeAction: removeAction,
                                 buttonSize: 24,
                                 countSize: 12,
-                                spacing: 8
+                                spacing: 8,
+                                shouldShowPrice: false
                             )
                         }
                         .frame(width: 80)
@@ -73,4 +75,3 @@ struct CoffeeSearchView: View {
         .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
     }
 }
-

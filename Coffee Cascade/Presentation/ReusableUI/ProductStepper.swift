@@ -15,6 +15,7 @@ struct ProductStepper: View {
     var buttonSize: CGFloat = 44
     var countSize: CGFloat = 18
     var spacing: CGFloat = 20
+    let shouldShowPrice: Bool
     var body: some View {
         VStack {
             Spacer()
@@ -29,7 +30,7 @@ struct ProductStepper: View {
                 .padding(.leading, 15)
                 .padding([.top, .bottom], 10)
 
-                Text("\($count.wrappedValue) x $2.99")
+                Text(shouldShowPrice ? "\(count) x $2.99" : "\(count)")
                     .lineLimit(1)
                     .font(CustomFont.custom(.interSemiBold, size: countSize))
 

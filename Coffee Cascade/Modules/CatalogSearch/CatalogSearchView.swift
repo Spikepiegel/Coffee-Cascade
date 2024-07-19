@@ -9,14 +9,10 @@ import Kingfisher
 import SwiftUI
 
 struct CatalogSearchView<ViewModel: ICatalogSearchViewModel>: View {
-    @StateObject
-    var viewModel: ViewModel
-    @Environment(\.presentationMode)
-    var presentationMode
-    @State
-    private var searchText = ""
-    @State
-    private var selectedRecipe: Recipe?
+    @StateObject var viewModel: ViewModel
+    @Environment(\.presentationMode) var presentationMode
+    @State private var searchText = ""
+    @State private var selectedRecipe: Recipe?
 
     var body: some View {
         VStack {
@@ -51,9 +47,8 @@ struct CatalogSearchView<ViewModel: ICatalogSearchViewModel>: View {
                 let vm = ProductDetailsViewModel(recipe: recipe)
                 ProductDetailView(viewModel: vm)
             }
-
-            Spacer()
         }
+        .ignoresSafeArea(edges: .bottom)
         .navigationBarBackButtonHidden(true)
     }
 }

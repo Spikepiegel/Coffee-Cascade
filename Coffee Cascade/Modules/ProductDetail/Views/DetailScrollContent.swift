@@ -54,7 +54,8 @@ struct DetailScrollContent: View {
                                 withAnimation {
                                     removeAction?()
                                 }
-                            }
+                            },
+                            shouldShowPrice: true
                         )
                         .transition(.opacity)
                     }
