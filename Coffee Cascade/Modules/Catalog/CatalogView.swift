@@ -5,18 +5,20 @@
 //  Created by Николай Лермонтов on 07.07.2024.
 //
 
-import SwiftUI
 import Kingfisher
+import SwiftUI
 
 enum NavigationDestination {
     case searchView
 }
 
-
 struct CatalogView<ViewModel: ICatalogViewModel>: View {
-    @StateObject var viewModel: ViewModel
-    @State private var selectedRecipe: Recipe?
-    @State private var isSearchViewPresented = false
+    @StateObject
+    var viewModel: ViewModel
+    @State
+    private var selectedRecipe: Recipe?
+    @State
+    private var isSearchViewPresented = false
 
     var body: some View {
         NavigationStack {
@@ -28,7 +30,7 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                     CatalogTopNavigationView {
                         isSearchViewPresented = true
                     }
-                    
+
                     CategoriesScrollView(
                         categories: $viewModel.categories,
                         selectedCategory: $viewModel.selectedCategory
@@ -42,7 +44,7 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                         selectedRecipe: $selectedRecipe,
                         selectedCategory: $viewModel.selectedCategory
                     )
-                    
+
                     Spacer()
                 }
             }
@@ -52,13 +54,16 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                 }
             }
             .fullScreenCover(item: $selectedRecipe) { recipe in
-                ProductDetailView(recipe: recipe)
+                let vm = ProductDetailsViewModel(recipe: recipe)
+                ProductDetailView(viewModel: vm)
             }
             .navigationDestination(isPresented: $isSearchViewPresented) {
+                let productCart: IProductCart = ProductCart.shared
                 CatalogSearchView(
                     viewModel: CatalogSearchViewModel(
                         recipes: viewModel.recipes,
-                        categories: viewModel.categories
+                        categories: viewModel.categories,
+                        productCartSerivce: productCart
                     )
                 )
             }
@@ -66,10 +71,7 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
     }
 }
 
-
 #Preview {
     let viewModel = MockCatalogViewModel()
     return CatalogView(viewModel: viewModel)
 }
-
-

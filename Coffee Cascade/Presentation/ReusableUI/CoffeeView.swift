@@ -5,23 +5,32 @@
 //  Created by Николай Лермонтов on 07.07.2024.
 //
 
-import SwiftUI
 import Kingfisher
+import SwiftUI
 
 struct CoffeeView: View {
     let image: String
     let name: String
     let onTap: () -> Void
 
+    @State
+    private var isLoading = true
+
     var body: some View {
         ZStack(alignment: .bottom) {
             GestureHandlingView {
                 KFImage(URL(string: image))
                     .placeholder {
-                        Image(systemName: "photo")
-                            .resizable()
-                            .scaledToFill()
-                            .clipped()
+                        Rectangle()
+                            .foregroundColor(.gray)
+                            .cornerRadius(36)
+                            .shimmer()
+                    }
+                    .onSuccess { _ in
+                        isLoading = false
+                    }
+                    .onFailure { _ in
+                        isLoading = false
                     }
                     .resizable()
                     .scaledToFill()
@@ -61,7 +70,6 @@ struct CoffeeView: View {
         .clipShape(RoundedRectangle(cornerRadius: 36))
     }
 }
-
 
 #Preview {
     let image = "https://athome.starbucks.com/sites/default/files/2021-06/1_CAH_CaffeMocha_Hdr_2880x16602.jpg"

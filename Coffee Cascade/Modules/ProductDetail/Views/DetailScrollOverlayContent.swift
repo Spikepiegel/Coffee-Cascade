@@ -15,29 +15,32 @@ struct DetailScrollOverlayContent: View {
             VStack(spacing: 15) {
                 Text(recipe.name)
                     .foregroundStyle(.white)
-                    .font(.title2)
+                    .font(CustomFont.custom(.interBold, size: 24))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding([.leading, .trailing], 15)
                 
                 Text(recipe.description)
                     .foregroundStyle(.white)
+                    .font(CustomFont.custom(.interSemiBold, size: 18))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding([.leading, .trailing], 15)
                 
                 Text("Ingredients")
                     .foregroundStyle(.white)
-                    .font(.title)
+                    .font(CustomFont.custom(.interBold, size: 24))
                     .frame(maxWidth: .infinity, alignment: .center)
                 
                 DetailRecipeIngredientView(recipeIngredients: recipe.recipeIngredient)
                 
                 Text("Recipe Instructions")
                     .foregroundStyle(.white)
-                    .font(.title)
+                    .font(CustomFont.custom(.interBold, size: 24))
                     .frame(maxWidth: .infinity, alignment: .center)
                 
                 DetailsRecipeInstructionsView(recipeInstruction: recipe.recipeInstructions)
                 
+                
+                Spacer(minLength: 50)
             }
             
             Spacer(minLength: 20)

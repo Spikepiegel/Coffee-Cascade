@@ -15,7 +15,7 @@ struct DetailsRecipeInstructionsView: View {
             ForEach(Array(recipeInstruction.enumerated()), id: \.element) { index, instruction in
                 HStack(alignment: .top) {
                     Text("\(index + 1).")
-                        .font(.headline)
+                        .font(CustomFont.custom(.interSemiBold, size: 18))
                         .padding(.trailing, 5)
                     
                     VStack(alignment: .leading) {

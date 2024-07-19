@@ -9,9 +9,18 @@ import SwiftUI
 
 struct DetailScrollContent: View {
     let recipe: Recipe
-    @Environment(\.presentationMode) var presentationMode
-    @State private var offset: CGFloat = 0
-    @State private var isDragging = false
+    let isCartEmpty: Bool
+    @Environment(\.presentationMode)
+    var presentationMode
+    @State
+    private var offset: CGFloat = 0
+
+    var addToCart: (() -> Void)?
+
+    @Binding
+    var countOfProducts: Int
+
+    var removeAction: (() -> Void)?
 
     var body: some View {
         BlurView(style: .dark)
@@ -21,7 +30,7 @@ struct DetailScrollContent: View {
                 VStack {
                     HStack {
                         Spacer()
-                        
+
                         Button(action: {
                             presentationMode.wrappedValue.dismiss()
                         }) {
@@ -33,12 +42,24 @@ struct DetailScrollContent: View {
                     DetailScrollOverlayContent(recipe: recipe)
                 }
                 .padding(.top, 20)
+                .overlay {
+                    if countOfProducts == 0 {
+                        AddToCartDetailsButton(addToCart: addToCart)
+                            .transition(.opacity)
+                    } else {
+                        ProductStepper(
+                            count: $countOfProducts,
+                            addAction: addToCart,
+                            removeAction: {
+                                withAnimation {
+                                    removeAction?()
+                                }
+                            }
+                        )
+                        .transition(.opacity)
+                    }
+                }
+                .animation(.easeInOut, value: countOfProducts)
             )
     }
-}
-
-#Preview {
-    let mockModel = MockCatalogViewModel()
-    let recipe = mockModel.recipes[0]
-    return DetailScrollContent(recipe: recipe)
 }
