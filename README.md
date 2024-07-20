@@ -21,12 +21,8 @@
 </ul>
 <p>     </p>
 
-<p><strong> 📸 Photo and Video: </strong></p>
-<h1 align="left">Video Preview</h1>
-<video width="320" height="240" controls>
-  <source src="MediaContent/overview_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<p><strong> 📸 Video: </strong></p>
+<h1 align="left"><a href="https://youtube.com/shorts/Yqb6JN-obm4?feature=share" target="_blank">Video Preview(click)</a> 
 
 
 <table>
@@ -35,13 +31,13 @@
       <img src="MediaContent/catalog-gif.gif" alt="Example GIF" width="250" height="500">
     </td>
     <td align="center">
-      <img src="ReadmeImages/search-gif.gif" alt="Example GIF" width="250" height="500">
+      <img src="MediaContent/search-gif.gif" alt="Example GIF" width="250" height="500">
     </td>
     <td align="center">
-      <img src="ReadmeImages/cart-gif.gif" alt="Example GIF" width="250" height="500">
+      <img src="MediaContent/cart-gif.gif" alt="Example GIF" width="250" height="500">
     </td>
         <td align="center">
-      <img src="ReadmeImages/product-gif.gif" alt="Example GIF" width="250" height="500">
+      <img src="MediaContent/product-gif.gif" alt="Example GIF" width="250" height="500">
     </td>
   </tr>
 </table>
