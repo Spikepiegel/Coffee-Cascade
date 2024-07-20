@@ -27,7 +27,7 @@ final class RecipeService: IRecipeService {
     // MARK: - Public methods
     
     func getRecipes() async throws -> [Recipe] {
-        let data = try await dataRepository.fetchData(from: Router.recipe.path, method: .get)
+        let data = try await dataRepository.fetchData(from: URLRouter.recipe.path, method: .get)
         return try JSONDecoder().decode([Recipe].self, from: data)
     }
     

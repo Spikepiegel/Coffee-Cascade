@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import SwiftfulRouting
 
 protocol ICatalogSearchViewModel: ObservableObject {
     var recipes: [Recipe] { get set }
@@ -14,11 +15,13 @@ protocol ICatalogSearchViewModel: ObservableObject {
     var productCounts: [String: Int] { get set }
     func addToCart(recipe: Recipe)
     func removeFromCart(recipe: Recipe)
+    func productDetailScreen(recipe: Recipe)
 }
 
 final class CatalogSearchViewModel: ICatalogSearchViewModel {
     // MARK: - Public Properties
-
+    
+    let router: AnyRouter
     let productCartSerivce: IProductCart
 
     // MARK: - Private Properties
@@ -35,7 +38,8 @@ final class CatalogSearchViewModel: ICatalogSearchViewModel {
 
     // MARK: - Initializers
 
-    init(recipes: [Recipe], categories: [String], productCartSerivce: IProductCart) {
+    init(router: AnyRouter, recipes: [Recipe], categories: [String], productCartSerivce: IProductCart) {
+        self.router = router
         self.recipes = recipes
         self.categories = categories
         self.productCartSerivce = productCartSerivce
@@ -53,6 +57,13 @@ final class CatalogSearchViewModel: ICatalogSearchViewModel {
     func removeFromCart(recipe: Recipe) {
         cartService.removeProduct(withID: recipe.productID)
         print(cartService.getAllProducts)
+    }
+    
+    func productDetailScreen(recipe: Recipe) {
+        router.showScreen(.fullScreenCover) { router in
+            let vm = ProductDetailsViewModel(router: router, recipe: recipe)
+            ProductDetailView(viewModel: vm)
+        }
     }
 
     // MARK: - Private Methods

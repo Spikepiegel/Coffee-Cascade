@@ -1,5 +1,5 @@
 {
-  "originHash" : "917a2b512148612347b307b5f8d624e74df48af36fa322c80901a86fc0e1317f",
+  "originHash" : "62a8ffa6e2bfe20d4997c3a1a07e4d7aef34844f89917f4abd23f8e976c58fcb",
   "pins" : [
     {
       "identity" : "kingfisher",
@@ -8,6 +8,24 @@
       "state" : {
         "revision" : "2ef543ee21d63734e1c004ad6c870255e8716c50",
         "version" : "7.12.0"
+      }
+    },
+    {
+      "identity" : "swiftfulrecursiveui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftfulThinking/SwiftfulRecursiveUI.git",
+      "state" : {
+        "revision" : "3d2d5ac6efe70874fb5ffb2f8e1d5ccd457f4366",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "swiftfulrouting",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Spikepiegel/SwiftfulRouting",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f478d8e6af82ba9ce438c8e5bab21ffded6505d5"
       }
     }
   ],

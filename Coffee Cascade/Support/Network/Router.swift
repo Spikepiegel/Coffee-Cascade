@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Router {
+enum URLRouter {
     case recipe
     
     var path: String {

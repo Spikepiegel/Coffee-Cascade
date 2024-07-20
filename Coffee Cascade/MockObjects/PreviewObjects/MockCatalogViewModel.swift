@@ -5,35 +5,39 @@
 //  Created by Николай Лермонтов on 07.07.2024.
 //
 
-import Foundation
-
-import SwiftUI
 import Combine
+import Foundation
+import SwiftfulRouting
+import SwiftUI
 
 final class MockCatalogViewModel: ICatalogViewModel {
-    @Published var recipes: [Recipe] = []
-    @Published var categories: [String] = []
-    @Published var selectedCategory: String? = nil
-    @Published var filteredRecipes: [Recipe] = []
-    
+    @Published
+    var recipes: [Recipe] = []
+    @Published
+    var categories: [String] = []
+    @Published
+    var selectedCategory: String? = nil
+    @Published
+    var filteredRecipes: [Recipe] = []
+
     private var cancellables = Set<AnyCancellable>()
-    
+
     init() {
         mockData()
-        
+
         $selectedCategory
             .combineLatest($recipes)
             .map { selectedCategory, recipes in
-                guard let selectedCategory = selectedCategory else {
+                guard let selectedCategory else {
                     return recipes
                 }
                 return recipes.filter { $0.category == selectedCategory }
             }
             .assign(to: &$filteredRecipes)
     }
-    
+
     func onAppear() async {}
-    
+
     private func mockData() {
         recipes = [
             Recipe(
@@ -50,12 +54,18 @@ final class MockCatalogViewModel: ICatalogViewModel {
                     "6 oz water",
                     "1 Tbsp Vanilla Syrup",
                     "Ice",
-                    "2 oz almondmilk (or your choice of milk)"
+                    "2 oz almondmilk (or your choice of milk)",
                 ],
                 recipeInstructions: [
-                    Instruction(name: "STEP 01", text: "In a large glass, stir together 6 oz of Starbucks® Dark Chocolate Hazelnut Cold Brew Concentrate 6 oz of water, and 1-2 oz Vanilla Syrup."),
-                    Instruction(name: "STEP 02", text: "Add enough ice to fill the glass to ½ inch below the rim, leaving room for milk."),
-                    Instruction(name: "STEP 03", text: "Top with your desired amount of almondmilk.")
+                    Instruction(
+                        name: "STEP 01",
+                        text: "In a large glass, stir together 6 oz of Starbucks® Dark Chocolate Hazelnut Cold Brew Concentrate 6 oz of water, and 1-2 oz Vanilla Syrup."
+                    ),
+                    Instruction(
+                        name: "STEP 02",
+                        text: "Add enough ice to fill the glass to ½ inch below the rim, leaving room for milk."
+                    ),
+                    Instruction(name: "STEP 03", text: "Top with your desired amount of almondmilk."),
                 ],
                 category: "ICED BEVERAGES"
             ),
@@ -74,18 +84,42 @@ final class MockCatalogViewModel: ICatalogViewModel {
                     "1 Tbsp Starbucks® Vanilla Flavored Creamer",
                     "Ice",
                     "3 Tbsp 2% milk",
-                    "0.25 tsp cake batter flavored extract (or ½ tsp butter flavored extract and ½ tsp almond extract)*​"
+                    "0.25 tsp cake batter flavored extract (or ½ tsp butter flavored extract and ½ tsp almond extract)*​",
                 ],
                 recipeInstructions: [
-                    Instruction(name: "STEP 01", text: "Fill a 16-oz tumbler (glass not recommended) with ice, about ¾ of the way."),
-                    Instruction(name: "STEP 02", text: "Brew Starbucks® Vanilla Iced Coffee Blend K-Cup® Pod (as directed) into the tumbler using the 6-oz iced setting on the brewer. Use the strong or iced button if available. Or, if using Starbucks® Iced Coffee Blend Ground Coffee, brew 3 Tbsp coffee grounds per 6 oz of water in your brewer of choice. Pour coffee into the tumbler."),
-                    Instruction(name: "STEP 03", text: "Using any cold frothing method, froth together Starbucks® Vanilla Flavored Creamer, milk and desired flavored extracts."),
-                    Instruction(name: "STEP 04", text: "Add as much or as little foam as you desire to the top of your drink.​")
+                    Instruction(
+                        name: "STEP 01",
+                        text: "Fill a 16-oz tumbler (glass not recommended) with ice, about ¾ of the way."
+                    ),
+                    Instruction(
+                        name: "STEP 02",
+                        text: "Brew Starbucks® Vanilla Iced Coffee Blend K-Cup® Pod (as directed) into the tumbler using the 6-oz iced setting on the brewer. Use the strong or iced button if available. Or, if using Starbucks® Iced Coffee Blend Ground Coffee, brew 3 Tbsp coffee grounds per 6 oz of water in your brewer of choice. Pour coffee into the tumbler."
+                    ),
+                    Instruction(
+                        name: "STEP 03",
+                        text: "Using any cold frothing method, froth together Starbucks® Vanilla Flavored Creamer, milk and desired flavored extracts."
+                    ),
+                    Instruction(
+                        name: "STEP 04",
+                        text: "Add as much or as little foam as you desire to the top of your drink.​"
+                    ),
                 ],
                 category: "ICED BEVERAGES"
-            )
+            ),
         ]
-        
+
         categories = ["ICED BEVERAGES", "HOT BEVERAGES", "FRAPPUCCINO"]
+    }
+
+    func productDetailScreen(recipe: Recipe) {
+        print("detail opened")
+    }
+
+    func openCatalogSearch() {
+        print("catalog opened")
+    }
+
+    func openCartView() {
+        print("cart opened")
     }
 }

@@ -20,7 +20,7 @@ struct CoffeeSearchView: View {
             KFImage(URL(string: recipe.image))
                 .resizable()
                 .placeholder {
-                    ProgressView() // Placeholder while loading
+                    ProgressView()
                 }
                 .scaledToFill()
                 .frame(width: 170, height: 120)

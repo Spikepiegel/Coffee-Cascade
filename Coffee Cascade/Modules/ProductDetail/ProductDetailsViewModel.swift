@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+import SwiftfulRouting
 
 protocol IProductDetailsViewModel: ObservableObject {
     var recipe: Recipe { get }
@@ -19,6 +20,7 @@ protocol IProductDetailsViewModel: ObservableObject {
 final class ProductDetailsViewModel: IProductDetailsViewModel {
     // MARK: Public Properties
 
+    let router: AnyRouter
     var recipe: Recipe
 
     @Published
@@ -35,7 +37,8 @@ final class ProductDetailsViewModel: IProductDetailsViewModel {
 
     // MARK: Initializers
 
-    init(recipe: Recipe) {
+    init(router: AnyRouter, recipe: Recipe) {
+        self.router = router
         self.recipe = recipe
         setupBindings()
     }

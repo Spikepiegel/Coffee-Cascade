@@ -5,21 +5,25 @@
 //  Created by Николай Лермонтов on 07.07.2024.
 //
 
+import SwiftfulRouting
 import SwiftUI
 
 @main
 struct AppSetup: App {
     var body: some Scene {
         WindowGroup {
-            setupInitialView()
+            RouterAppView()
         }
     }
-    
-    @ViewBuilder
-    private func setupInitialView() -> some View {
-        let dataRepository: IDataRepository = DataRepository()
-        let recipeService: IRecipeService = RecipeService(dataRepository: dataRepository)
-        let viewModel = CatalogViewModel(recipeService: recipeService)
-        CatalogView(viewModel: viewModel)
+}
+
+struct RouterAppView: View {
+    var body: some View {
+        RouterView(addNavigationView: true) { router in
+            let dataRepository: IDataRepository = DataRepository()
+            let recipeService: IRecipeService = RecipeService(dataRepository: dataRepository)
+            let viewModel = CatalogViewModel(router: router, recipeService: recipeService)
+            return CatalogView(viewModel: viewModel)
+        }
     }
 }

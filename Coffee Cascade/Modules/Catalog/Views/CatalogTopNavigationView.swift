@@ -9,15 +9,27 @@ import SwiftUI
 
 struct CatalogTopNavigationView: View {
     let onSearchButtonTapped: () -> Void
+    let onCartButtonTapped: () -> Void
 
     var body: some View {
         HStack {
             Text("MENU POINT")
                 .foregroundStyle(.black)
                 .font(CustomFont.custom(.interSemiBold, size: 24))
-            
+
             Spacer()
             
+            Button(action: {
+                onCartButtonTapped()
+            }) {
+                Image("nav-search-icon")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 26, height: 26)
+                    .foregroundColor(.white)
+                    .padding()
+            }
+
             Button(action: {
                 onSearchButtonTapped()
             }) {

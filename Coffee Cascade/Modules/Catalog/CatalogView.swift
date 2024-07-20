@@ -8,15 +8,9 @@
 import Kingfisher
 import SwiftUI
 
-enum NavigationDestination {
-    case searchView
-}
-
 struct CatalogView<ViewModel: ICatalogViewModel>: View {
     @StateObject
     var viewModel: ViewModel
-    @State
-    private var selectedRecipe: Recipe?
     @State
     private var isSearchViewPresented = false
 
@@ -29,6 +23,8 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                 VStack {
                     CatalogTopNavigationView {
                         isSearchViewPresented = true
+                    } onCartButtonTapped: {
+                        viewModel.openCartView()
                     }
 
                     CategoriesScrollView(
@@ -41,7 +37,7 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
 
                     RecipeScrollView(
                         recipes: $viewModel.filteredRecipes,
-                        selectedRecipe: $selectedRecipe,
+                        selectedRecipe: { recipe in viewModel.productDetailScreen(recipe: recipe) },
                         selectedCategory: $viewModel.selectedCategory
                     )
 
@@ -53,14 +49,11 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
                     await viewModel.onAppear()
                 }
             }
-            .fullScreenCover(item: $selectedRecipe) { recipe in
-                let vm = ProductDetailsViewModel(recipe: recipe)
-                ProductDetailView(viewModel: vm)
-            }
             .navigationDestination(isPresented: $isSearchViewPresented) {
                 let productCart: IProductCart = ProductCart.shared
                 CatalogSearchView(
                     viewModel: CatalogSearchViewModel(
+                        router: viewModel.router,
                         recipes: viewModel.recipes,
                         categories: viewModel.categories,
                         productCartSerivce: productCart
@@ -69,9 +62,4 @@ struct CatalogView<ViewModel: ICatalogViewModel>: View {
             }
         }
     }
-}
-
-#Preview {
-    let viewModel = MockCatalogViewModel()
-    return CatalogView(viewModel: viewModel)
 }

@@ -123,6 +123,13 @@
 		456FE73E2C3C964C002BDE03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453167702C3A0D210053D22E /* Preview Assets.xcassets */; };
 		456FE73F2C3C964E002BDE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
 		456FE7402C3C964E002BDE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4531676D2C3A0D210053D22E /* Assets.xcassets */; };
+		457A614B2C4BB5D300CFB8FA /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 457A614A2C4BB5D300CFB8FA /* SwiftfulRouting */; };
+		457A614E2C4BCD7200CFB8FA /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A614D2C4BCD7200CFB8FA /* CartView.swift */; };
+		457A614F2C4BCD7200CFB8FA /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A614D2C4BCD7200CFB8FA /* CartView.swift */; };
+		457A61502C4BCD7200CFB8FA /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A614D2C4BCD7200CFB8FA /* CartView.swift */; };
+		457A61522C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A61512C4BCD7D00CFB8FA /* CartViewModel.swift */; };
+		457A61532C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A61512C4BCD7D00CFB8FA /* CartViewModel.swift */; };
+		457A61542C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A61512C4BCD7D00CFB8FA /* CartViewModel.swift */; };
 		457C0AC02C4B02BB006B9EA2 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 457C0ABD2C4B02BB006B9EA2 /* Inter-Bold.ttf */; };
 		457C0AC12C4B02BB006B9EA2 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 457C0ABE2C4B02BB006B9EA2 /* Inter-Light.ttf */; };
 		457C0AC22C4B02BB006B9EA2 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 457C0ABF2C4B02BB006B9EA2 /* Inter-SemiBold.ttf */; };
@@ -209,6 +216,8 @@
 		456FE70E2C3C934A002BDE03 /* DetailRecipeIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeIngredientView.swift; sourceTree = "<group>"; };
 		456FE7142C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRecipeInstructionsView.swift; sourceTree = "<group>"; };
 		456FE71A2C3C9581002BDE03 /* DetailScrollOverlayContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollOverlayContent.swift; sourceTree = "<group>"; };
+		457A614D2C4BCD7200CFB8FA /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		457A61512C4BCD7D00CFB8FA /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		457C0ABD2C4B02BB006B9EA2 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		457C0ABE2C4B02BB006B9EA2 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		457C0ABF2C4B02BB006B9EA2 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -228,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45EC85522C49AD8A00D30D4D /* Kingfisher in Frameworks */,
+				457A614B2C4BB5D300CFB8FA /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +356,7 @@
 		454674AC2C3A0EC5009DA332 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				457A614C2C4BCD6700CFB8FA /* Cart */,
 				451532572C3D7F12003D7F08 /* CatalogSearch */,
 				455D40312C3B587D00C03278 /* ProductDetail */,
 				454674AD2C3A0F0D009DA332 /* Catalog */,
@@ -510,6 +521,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		457A614C2C4BCD6700CFB8FA /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				457A614D2C4BCD7200CFB8FA /* CartView.swift */,
+				457A61512C4BCD7D00CFB8FA /* CartViewModel.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		45FB71422C3D71770029ADE6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,6 +558,7 @@
 			name = "Coffee Cascade";
 			packageProductDependencies = (
 				45EC85512C49AD8A00D30D4D /* Kingfisher */,
+				457A614A2C4BB5D300CFB8FA /* SwiftfulRouting */,
 			);
 			productName = "Coffee Cascade";
 			productReference = 453167662C3A0D210053D22E /* Coffee Cascade.app */;
@@ -619,6 +640,7 @@
 			mainGroup = 4531675D2C3A0D210053D22E;
 			packageReferences = (
 				45EC85502C49AD8A00D30D4D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				457A61492C4BB5D300CFB8FA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			productRefGroup = 453167672C3A0D210053D22E /* Products */;
 			projectDirPath = "";
@@ -681,6 +703,7 @@
 				455D40122C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
 				455D400B2C3AC30700C03278 /* AppConstants.swift in Sources */,
 				456FE71B2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
+				457A61522C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */,
 				456FE7072C3C8B56002BDE03 /* DragState.swift in Sources */,
 				455D40332C3B58AD00C03278 /* ProductDetailView.swift in Sources */,
 				455D3FFF2C3AA55000C03278 /* Router.swift in Sources */,
@@ -708,6 +731,7 @@
 				455D402C2C3AFBDD00C03278 /* BlurView.swift in Sources */,
 				455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */,
 				4557C0742C4081FC00D94380 /* CoffeeSearchView.swift in Sources */,
+				457A614E2C4BCD7200CFB8FA /* CartView.swift in Sources */,
 				457C0AC42C4B0719006B9EA2 /* ProductStepper.swift in Sources */,
 				454674B72C3A1477009DA332 /* CatalogViewModel.swift in Sources */,
 				450E57B92C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
@@ -726,6 +750,7 @@
 				456FE7352C3C963E002BDE03 /* CategoriesScrollView.swift in Sources */,
 				455D40172C3ADF3A00C03278 /* Recipe.swift in Sources */,
 				456FE72D2C3C961C002BDE03 /* Color+Extension.swift in Sources */,
+				457A614F2C4BCD7200CFB8FA /* CartView.swift in Sources */,
 				456FE72F2C3C9622002BDE03 /* CustomColor.swift in Sources */,
 				456FE7122C3C9386002BDE03 /* ProductDetailView.swift in Sources */,
 				456FE70A2C3C9237002BDE03 /* GestureHandlingView.swift in Sources */,
@@ -749,6 +774,7 @@
 				450E57AD2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */,
 				450E57A92C3DD10D00115C50 /* CatalogSearchView.swift in Sources */,
 				455D401B2C3ADF5100C03278 /* Instruction.swift in Sources */,
+				457A61532C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */,
 				457C0AC72C4B0D8E006B9EA2 /* Binding+Extension.swift in Sources */,
 				456FE7102C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				456FE7312C3C9628002BDE03 /* Router.swift in Sources */,
@@ -776,6 +802,7 @@
 				456FE72C2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
 				455D402E2C3AFC1D00C03278 /* BlurView.swift in Sources */,
 				450E57B32C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */,
+				457A61542C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */,
 				45A8EE0E2C4877720049EC1C /* ShimmerEffect.swift in Sources */,
 				451532562C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */,
 				456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
@@ -803,6 +830,7 @@
 				456FE7342C3C962B002BDE03 /* AppConstants.swift in Sources */,
 				456FE7172C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
 				456FE70D2C3C923C002BDE03 /* ProductKFImage.swift in Sources */,
+				457A61502C4BCD7200CFB8FA /* CartView.swift in Sources */,
 				456FE7302C3C9622002BDE03 /* CustomColor.swift in Sources */,
 				456FE7112C3C9356002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				456FE73A2C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
@@ -1134,6 +1162,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		457A61492C4BB5D300CFB8FA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Spikepiegel/SwiftfulRouting";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		45EC85502C49AD8A00D30D4D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -1152,6 +1188,11 @@
 		455D40222C3AE1D900C03278 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Kingfisher;
+		};
+		457A614A2C4BB5D300CFB8FA /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457A61492C4BB5D300CFB8FA /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
 		};
 		45EC85512C49AD8A00D30D4D /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -12,7 +12,6 @@ struct CatalogSearchView<ViewModel: ICatalogSearchViewModel>: View {
     @StateObject var viewModel: ViewModel
     @Environment(\.presentationMode) var presentationMode
     @State private var searchText = ""
-    @State private var selectedRecipe: Recipe?
 
     var body: some View {
         VStack {
@@ -24,7 +23,7 @@ struct CatalogSearchView<ViewModel: ICatalogSearchViewModel>: View {
                 .padding(.horizontal)
 
             ScrollView(.vertical, showsIndicators: false) {
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 40), count: 2), spacing: 5) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 40), count: 2), spacing: 0) {
                     ForEach(viewModel.recipes.filter {
                         searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased())
                     }) { recipe in
@@ -36,17 +35,13 @@ struct CatalogSearchView<ViewModel: ICatalogSearchViewModel>: View {
                         )
                         .frame(width: 170, height: 250)
                         .onTapGesture {
-                            selectedRecipe = recipe
+                            viewModel.productDetailScreen(recipe: recipe)
                         }
                     }
                 }
                 .padding()
             }
             .padding()
-            .fullScreenCover(item: $selectedRecipe) { recipe in
-                let vm = ProductDetailsViewModel(recipe: recipe)
-                ProductDetailView(viewModel: vm)
-            }
         }
         .ignoresSafeArea(edges: .bottom)
         .navigationBarBackButtonHidden(true)

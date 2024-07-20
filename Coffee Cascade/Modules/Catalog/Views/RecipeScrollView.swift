@@ -10,7 +10,7 @@ import Kingfisher
 
 struct RecipeScrollView: View {
     @Binding var recipes: [Recipe]
-    @Binding var selectedRecipe: Recipe?
+    var selectedRecipe: (Recipe) -> ()
     @Binding var selectedCategory: String?
     
     var body: some View {
@@ -19,7 +19,7 @@ struct RecipeScrollView: View {
                 LazyHStack(spacing: 16) {
                     ForEach(recipes) { recipe in
                         CoffeeView(image: recipe.image, name: recipe.name) {
-                            selectedRecipe = recipe
+                            selectedRecipe(recipe)
                             preloadNextImages(currentRecipe: recipe)
                         }
                         .id(recipe.id)
