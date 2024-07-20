@@ -25,7 +25,7 @@ struct Recipe: Identifiable, Decodable, Equatable, Hashable {
     let category: String
     var imageData: Data?
     let volume: String = "400"
-    let price: String = "2.99"
+    let price: Double = 2.99
     
     enum CodingKeys: String, CodingKey {
         case productID = "_id"

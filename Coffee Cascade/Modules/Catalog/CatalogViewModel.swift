@@ -19,6 +19,7 @@ protocol ICatalogViewModel: ObservableObject {
     var categories: [String] { get set }
     var selectedCategory: String? { get set }
     var filteredRecipes: [Recipe] { get set }
+    var router: AnyRouter { get }
 }
 
 final class CatalogViewModel: ICatalogViewModel {
@@ -38,6 +39,7 @@ final class CatalogViewModel: ICatalogViewModel {
 
     private var cancellables = Set<AnyCancellable>()
     private let recipeService: IRecipeService
+    private let cartService = ProductCart.shared
 
     // MARK: - Initializers
 
@@ -60,7 +62,29 @@ final class CatalogViewModel: ICatalogViewModel {
         }
     }
 
-    func openCartView() {}
+    func openCartView() {
+        router.showScreen(.fullScreenCover) { router in
+            let vm = CartViewModel(router: router, paymentFinished: { [weak self] in
+                self?.cartService.clearCart()
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self?.openSuccessOrderScreen()
+                }
+            })
+            CartView(viewModel: vm)
+        }
+    }
+
+    private func openSuccessOrderScreen() {
+        router.showResizableSheet(
+            sheetDetents: [.medium],
+            selection: nil,
+            showDragIndicator: false
+        ) { router in
+            let vm = SuccessOrderViewModel(router: router)
+            return SuccessOrderView(viewModel: vm)
+        }
+    }
 
     // MARK: - Private Methods
 

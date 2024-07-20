@@ -22,12 +22,11 @@ struct CatalogTopNavigationView: View {
             Button(action: {
                 onCartButtonTapped()
             }) {
-                Image("nav-search-icon")
+                Image("cart-icon")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 26, height: 26)
-                    .foregroundColor(.white)
-                    .padding()
+                    .padding(.trailing, -10)
             }
 
             Button(action: {
@@ -44,3 +43,4 @@ struct CatalogTopNavigationView: View {
         .padding(.leading, 20)
     }
 }
+

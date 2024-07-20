@@ -38,7 +38,7 @@ struct CoffeeSearchView: View {
                 }
 
                 HStack {
-                    Text("$ \(recipe.price)")
+                    Text("$ \(String(format: "%.2f", max(recipe.price, 0)))")
                         .font(CustomFont.custom(.interBold, size: 14))
                         .padding(.top, 2)
 

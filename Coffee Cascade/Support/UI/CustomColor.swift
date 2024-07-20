@@ -14,6 +14,9 @@ enum CustomColor: String {
     case categoryColor = "CategoryColor"
     case grayComponent = "grayComponent"
     case darkGrayComponent = "DarkGrayComponent"
+    case progressBarGray = "progressBarGray"
+    case progressBarGreen = "progressBarGreen"
+    case iconColor = "iconColor"
     
     var name: String {
         return self.rawValue

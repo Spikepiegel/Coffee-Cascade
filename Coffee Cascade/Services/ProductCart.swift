@@ -56,6 +56,12 @@ final class ProductCart: IProductCart, ObservableObject {
     func getCountOfProducts(withID id: String) -> Int {
         publishProducts.filter { $0.productID == id }.count
     }
+    
+    /// Clear cart
+    
+    func clearCart() {
+        publishProducts.removeAll()
+    }
 
     /// Get all products from the cart
     func getAllProducts() -> [Recipe] {

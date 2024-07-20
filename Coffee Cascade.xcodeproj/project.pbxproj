@@ -143,6 +143,27 @@
 		45A8EE102C487BAC0049EC1C /* ProductCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A8EE0F2C487BAC0049EC1C /* ProductCart.swift */; };
 		45A8EE112C487BAC0049EC1C /* ProductCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A8EE0F2C487BAC0049EC1C /* ProductCart.swift */; };
 		45A8EE122C487BAC0049EC1C /* ProductCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A8EE0F2C487BAC0049EC1C /* ProductCart.swift */; };
+		45BB78DB2C4BE8D700946103 /* CartTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78DA2C4BE8D700946103 /* CartTopNavigationView.swift */; };
+		45BB78DC2C4BE8D800946103 /* CartTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78DA2C4BE8D700946103 /* CartTopNavigationView.swift */; };
+		45BB78DD2C4BE8D800946103 /* CartTopNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78DA2C4BE8D700946103 /* CartTopNavigationView.swift */; };
+		45BB78DF2C4BEEB700946103 /* ShippingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78DE2C4BEEB700946103 /* ShippingStatus.swift */; };
+		45BB78E02C4BEEB900946103 /* ShippingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78DE2C4BEEB700946103 /* ShippingStatus.swift */; };
+		45BB78E12C4BEEB900946103 /* ShippingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78DE2C4BEEB700946103 /* ShippingStatus.swift */; };
+		45BB78E32C4BEED300946103 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78E22C4BEED300946103 /* ProgressBar.swift */; };
+		45BB78E42C4BEED300946103 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78E22C4BEED300946103 /* ProgressBar.swift */; };
+		45BB78E52C4BEED300946103 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78E22C4BEED300946103 /* ProgressBar.swift */; };
+		45BB78E72C4C14E500946103 /* CartProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78E62C4C14E500946103 /* CartProductsList.swift */; };
+		45BB78E82C4C14E500946103 /* CartProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78E62C4C14E500946103 /* CartProductsList.swift */; };
+		45BB78E92C4C14E500946103 /* CartProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78E62C4C14E500946103 /* CartProductsList.swift */; };
+		45BB78EB2C4C18C800946103 /* PaymentSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78EA2C4C18C800946103 /* PaymentSlider.swift */; };
+		45BB78EC2C4C18C800946103 /* PaymentSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78EA2C4C18C800946103 /* PaymentSlider.swift */; };
+		45BB78ED2C4C18C800946103 /* PaymentSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78EA2C4C18C800946103 /* PaymentSlider.swift */; };
+		45BB78F02C4C1BF200946103 /* SuccessOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78EF2C4C1BF200946103 /* SuccessOrderView.swift */; };
+		45BB78F12C4C1BF200946103 /* SuccessOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78EF2C4C1BF200946103 /* SuccessOrderView.swift */; };
+		45BB78F22C4C1BF200946103 /* SuccessOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78EF2C4C1BF200946103 /* SuccessOrderView.swift */; };
+		45BB78F42C4C1C0500946103 /* SuccessOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78F32C4C1C0500946103 /* SuccessOrderViewModel.swift */; };
+		45BB78F52C4C1C0500946103 /* SuccessOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78F32C4C1C0500946103 /* SuccessOrderViewModel.swift */; };
+		45BB78F62C4C1C0500946103 /* SuccessOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB78F32C4C1C0500946103 /* SuccessOrderViewModel.swift */; };
 		45EC85522C49AD8A00D30D4D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 45EC85512C49AD8A00D30D4D /* Kingfisher */; };
 		45EC85542C49B81E00D30D4D /* AddToCartDetailsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC85532C49B81E00D30D4D /* AddToCartDetailsButton.swift */; };
 		45EC85562C49B85C00D30D4D /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EC85552C49B85C00D30D4D /* ProductDetailsViewModel.swift */; };
@@ -225,6 +246,13 @@
 		457C0AC52C4B0D8E006B9EA2 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
 		45A8EE0B2C4877720049EC1C /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		45A8EE0F2C487BAC0049EC1C /* ProductCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCart.swift; sourceTree = "<group>"; };
+		45BB78DA2C4BE8D700946103 /* CartTopNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTopNavigationView.swift; sourceTree = "<group>"; };
+		45BB78DE2C4BEEB700946103 /* ShippingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingStatus.swift; sourceTree = "<group>"; };
+		45BB78E22C4BEED300946103 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		45BB78E62C4C14E500946103 /* CartProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductsList.swift; sourceTree = "<group>"; };
+		45BB78EA2C4C18C800946103 /* PaymentSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSlider.swift; sourceTree = "<group>"; };
+		45BB78EF2C4C1BF200946103 /* SuccessOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrderView.swift; sourceTree = "<group>"; };
+		45BB78F32C4C1C0500946103 /* SuccessOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrderViewModel.swift; sourceTree = "<group>"; };
 		45EC85532C49B81E00D30D4D /* AddToCartDetailsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartDetailsButton.swift; sourceTree = "<group>"; };
 		45EC85552C49B85C00D30D4D /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		45FB71472C3D72120029ADE6 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
@@ -356,6 +384,7 @@
 		454674AC2C3A0EC5009DA332 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				45BB78EE2C4C1BE500946103 /* Order */,
 				457A614C2C4BCD6700CFB8FA /* Cart */,
 				451532572C3D7F12003D7F08 /* CatalogSearch */,
 				455D40312C3B587D00C03278 /* ProductDetail */,
@@ -524,10 +553,32 @@
 		457A614C2C4BCD6700CFB8FA /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				45BB78D92C4BE8D000946103 /* Views */,
 				457A614D2C4BCD7200CFB8FA /* CartView.swift */,
 				457A61512C4BCD7D00CFB8FA /* CartViewModel.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		45BB78D92C4BE8D000946103 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45BB78DA2C4BE8D700946103 /* CartTopNavigationView.swift */,
+				45BB78DE2C4BEEB700946103 /* ShippingStatus.swift */,
+				45BB78E22C4BEED300946103 /* ProgressBar.swift */,
+				45BB78E62C4C14E500946103 /* CartProductsList.swift */,
+				45BB78EA2C4C18C800946103 /* PaymentSlider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45BB78EE2C4C1BE500946103 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				45BB78EF2C4C1BF200946103 /* SuccessOrderView.swift */,
+				45BB78F32C4C1C0500946103 /* SuccessOrderViewModel.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		45FB71422C3D71770029ADE6 /* Fonts */ = {
@@ -699,9 +750,11 @@
 				456FE7052C3C8B49002BDE03 /* CloseButtonImage.swift in Sources */,
 				45A8EE102C487BAC0049EC1C /* ProductCart.swift in Sources */,
 				455D3FFD2C3AA52D00C03278 /* RecipeService.swift in Sources */,
+				45BB78E72C4C14E500946103 /* CartProductsList.swift in Sources */,
 				457C0AC62C4B0D8E006B9EA2 /* Binding+Extension.swift in Sources */,
 				455D40122C3AC98D00C03278 /* RecipeScrollView.swift in Sources */,
 				455D400B2C3AC30700C03278 /* AppConstants.swift in Sources */,
+				45BB78E32C4BEED300946103 /* ProgressBar.swift in Sources */,
 				456FE71B2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
 				457A61522C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */,
 				456FE7072C3C8B56002BDE03 /* DragState.swift in Sources */,
@@ -709,6 +762,7 @@
 				455D3FFF2C3AA55000C03278 /* Router.swift in Sources */,
 				456FE7092C3C8CB9002BDE03 /* DetailScrollContent.swift in Sources */,
 				455D40092C3AC07A00C03278 /* CoffeeView.swift in Sources */,
+				45BB78F42C4C1C0500946103 /* SuccessOrderViewModel.swift in Sources */,
 				456FE7032C3C7883002BDE03 /* GestureHandlingView.swift in Sources */,
 				455D40352C3B5A0000C03278 /* ProductKFImage.swift in Sources */,
 				450E57B12C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */,
@@ -720,13 +774,16 @@
 				455D3FF92C3AA47F00C03278 /* DataRepository.swift in Sources */,
 				450E57AC2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */,
 				450E57A82C3DD10D00115C50 /* CatalogSearchView.swift in Sources */,
+				45BB78DB2C4BE8D700946103 /* CartTopNavigationView.swift in Sources */,
 				45EC85542C49B81E00D30D4D /* AddToCartDetailsButton.swift in Sources */,
 				455D40282C3AF1EB00C03278 /* CustomColor.swift in Sources */,
 				4531676A2C3A0D210053D22E /* AppSetup.swift in Sources */,
 				455D3FFB2C3AA4C600C03278 /* HTTPMethod.swift in Sources */,
 				450E57B52C3DD96A00115C50 /* RecipeSearchService.swift in Sources */,
+				45BB78F02C4C1BF200946103 /* SuccessOrderView.swift in Sources */,
 				456FE70F2C3C934A002BDE03 /* DetailRecipeIngredientView.swift in Sources */,
 				45FB71482C3D72120029ADE6 /* CustomFont.swift in Sources */,
+				45BB78DF2C4BEEB700946103 /* ShippingStatus.swift in Sources */,
 				455D401F2C3AE16C00C03278 /* MockCatalogViewModel.swift in Sources */,
 				455D402C2C3AFBDD00C03278 /* BlurView.swift in Sources */,
 				455D40302C3AFDA000C03278 /* CatalogBottomNavigator.swift in Sources */,
@@ -737,6 +794,7 @@
 				450E57B92C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				455D40162C3ADBD600C03278 /* CategoriesScrollView.swift in Sources */,
 				455D40022C3AA7E900C03278 /* Recipe.swift in Sources */,
+				45BB78EB2C4C18C800946103 /* PaymentSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FB71492C3D72120029ADE6 /* CustomFont.swift in Sources */,
+				45BB78F12C4C1BF200946103 /* SuccessOrderView.swift in Sources */,
 				45A8EE0D2C4877720049EC1C /* ShimmerEffect.swift in Sources */,
 				450E57BA2C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				456FE7352C3C963E002BDE03 /* CategoriesScrollView.swift in Sources */,
@@ -754,9 +813,13 @@
 				456FE72F2C3C9622002BDE03 /* CustomColor.swift in Sources */,
 				456FE7122C3C9386002BDE03 /* ProductDetailView.swift in Sources */,
 				456FE70A2C3C9237002BDE03 /* GestureHandlingView.swift in Sources */,
+				45BB78EC2C4C18C800946103 /* PaymentSlider.swift in Sources */,
 				456FE7202C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */,
+				45BB78F52C4C1C0500946103 /* SuccessOrderViewModel.swift in Sources */,
 				456FE73B2C3C9648002BDE03 /* AppSetup.swift in Sources */,
 				4557C0752C4081FC00D94380 /* CoffeeSearchView.swift in Sources */,
+				45BB78E42C4BEED300946103 /* ProgressBar.swift in Sources */,
+				45BB78DC2C4BE8D800946103 /* CartTopNavigationView.swift in Sources */,
 				456FE71C2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
 				4531677B2C3A0D220053D22E /* Coffee_CascadeTests.swift in Sources */,
 				456FE7252C3C95E2002BDE03 /* RecipeService.swift in Sources */,
@@ -767,6 +830,7 @@
 				456FE7292C3C9609002BDE03 /* DataRepository.swift in Sources */,
 				456FE70C2C3C923B002BDE03 /* ProductKFImage.swift in Sources */,
 				451532552C3D7D04003D7F08 /* CatalogTopNavigationView.swift in Sources */,
+				45BB78E82C4C14E500946103 /* CartProductsList.swift in Sources */,
 				450E57B62C3DD96A00115C50 /* RecipeSearchService.swift in Sources */,
 				456FE7392C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
 				456FE7372C3C9641002BDE03 /* CatalogView.swift in Sources */,
@@ -780,6 +844,7 @@
 				456FE7312C3C9628002BDE03 /* Router.swift in Sources */,
 				456FE7162C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
 				456FE7272C3C95F8002BDE03 /* DragState.swift in Sources */,
+				45BB78E12C4BEEB900946103 /* ShippingStatus.swift in Sources */,
 				456FE7332C3C962B002BDE03 /* AppConstants.swift in Sources */,
 				456FE71E2C3C959F002BDE03 /* CloseButtonImage.swift in Sources */,
 				456FE7182C3C9520002BDE03 /* DetailScrollContent.swift in Sources */,
@@ -798,9 +863,11 @@
 				450E57B72C3DD96A00115C50 /* RecipeSearchService.swift in Sources */,
 				456FE7362C3C963F002BDE03 /* CategoriesScrollView.swift in Sources */,
 				456FE72A2C3C9609002BDE03 /* DataRepository.swift in Sources */,
+				45BB78E92C4C14E500946103 /* CartProductsList.swift in Sources */,
 				457C0AC82C4B0D8E006B9EA2 /* Binding+Extension.swift in Sources */,
 				456FE72C2C3C9617002BDE03 /* HTTPMethod.swift in Sources */,
 				455D402E2C3AFC1D00C03278 /* BlurView.swift in Sources */,
+				45BB78E52C4BEED300946103 /* ProgressBar.swift in Sources */,
 				450E57B32C3DD77400115C50 /* CatalogSearchTopNavigationView.swift in Sources */,
 				457A61542C4BCD7D00CFB8FA /* CartViewModel.swift in Sources */,
 				45A8EE0E2C4877720049EC1C /* ShimmerEffect.swift in Sources */,
@@ -808,6 +875,7 @@
 				456FE7232C3C95AD002BDE03 /* CatalogViewModel.swift in Sources */,
 				45EC85582C49B85C00D30D4D /* ProductDetailsViewModel.swift in Sources */,
 				456FE7282C3C95F9002BDE03 /* DragState.swift in Sources */,
+				45BB78F62C4C1C0500946103 /* SuccessOrderViewModel.swift in Sources */,
 				456FE71D2C3C9581002BDE03 /* DetailScrollOverlayContent.swift in Sources */,
 				4557C0762C4081FC00D94380 /* CoffeeSearchView.swift in Sources */,
 				45A8EE122C487BAC0049EC1C /* ProductCart.swift in Sources */,
@@ -819,13 +887,16 @@
 				456FE7212C3C95A5002BDE03 /* MockCatalogViewModel.swift in Sources */,
 				45FB714A2C3D72120029ADE6 /* CustomFont.swift in Sources */,
 				456FE70B2C3C9238002BDE03 /* GestureHandlingView.swift in Sources */,
+				45BB78DD2C4BE8D800946103 /* CartTopNavigationView.swift in Sources */,
 				453167852C3A0D220053D22E /* Coffee_CascadeUITests.swift in Sources */,
 				453167872C3A0D220053D22E /* Coffee_CascadeUITestsLaunchTests.swift in Sources */,
 				450E57AE2C3DD28100115C50 /* CatalogSearchViewModel.swift in Sources */,
 				450E57BB2C3DDCD800115C50 /* CatalogSearchBar.swift in Sources */,
 				456FE7192C3C9521002BDE03 /* DetailScrollContent.swift in Sources */,
+				45BB78F22C4C1BF200946103 /* SuccessOrderView.swift in Sources */,
 				456FE7322C3C9628002BDE03 /* Router.swift in Sources */,
 				455D40182C3ADF3B00C03278 /* Recipe.swift in Sources */,
+				45BB78E02C4BEEB900946103 /* ShippingStatus.swift in Sources */,
 				456FE7262C3C95E2002BDE03 /* RecipeService.swift in Sources */,
 				456FE7342C3C962B002BDE03 /* AppConstants.swift in Sources */,
 				456FE7172C3C946E002BDE03 /* DetailsRecipeInstructionsView.swift in Sources */,
@@ -836,6 +907,7 @@
 				456FE73A2C3C9645002BDE03 /* CatalogBottomNavigator.swift in Sources */,
 				450E57AA2C3DD10D00115C50 /* CatalogSearchView.swift in Sources */,
 				455D401A2C3ADF4C00C03278 /* CoffeeView.swift in Sources */,
+				45BB78ED2C4C18C800946103 /* PaymentSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

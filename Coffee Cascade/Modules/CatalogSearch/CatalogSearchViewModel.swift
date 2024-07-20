@@ -51,12 +51,10 @@ final class CatalogSearchViewModel: ICatalogSearchViewModel {
 
     func addToCart(recipe: Recipe) {
         cartService.addProduct(recipe)
-        print(cartService.getAllProducts)
     }
 
     func removeFromCart(recipe: Recipe) {
         cartService.removeProduct(withID: recipe.productID)
-        print(cartService.getAllProducts)
     }
     
     func productDetailScreen(recipe: Recipe) {
