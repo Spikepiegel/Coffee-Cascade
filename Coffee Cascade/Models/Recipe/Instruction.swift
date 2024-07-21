@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Instruction: Decodable, Equatable, Hashable {
+struct Instruction: Decodable, Equatable, Hashable, Encodable {
     let name: String
     let text: String
 }

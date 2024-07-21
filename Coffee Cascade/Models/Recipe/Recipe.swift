@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct Recipe: Identifiable, Decodable, Equatable, Hashable {
+struct Recipe: Identifiable, Decodable, Equatable, Hashable, Encodable {
     
     let id = UUID()
     let productID: String
